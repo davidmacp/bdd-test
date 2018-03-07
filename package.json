@@ -1,0 +1,22 @@
+{
+  "name": "bdd-test",
+  "version": "1.0.0",
+  "description": "Sample Chimp Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmacp/bdd-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmacp/bdd-test/issues"
+  },
+  "devDependencies": {
+    "chimp": "^0.51.0"
+  },
+  "homepage": "https://github.com/davidmacp/bdd-test#readme"
+}
