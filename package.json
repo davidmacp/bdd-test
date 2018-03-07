@@ -16,7 +16,8 @@
     "url": "https://github.com/davidmacp/bdd-test/issues"
   },
   "devDependencies": {
-    "chimp": "^0.51.0"
+    "chimp": "^0.51.0",
+    "cucumber-html-reporter": "^4.0.2"
   },
   "homepage": "https://github.com/davidmacp/bdd-test#readme"
 }

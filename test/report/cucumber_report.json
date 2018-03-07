@@ -1,0 +1,883 @@
+[
+  {
+    "description": "  As a user on the DADI.cloud home page they should be able to click the links in the header and be taken to the\n  relevant screen",
+    "elements": [
+      {
+        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Check header links go to the correct page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 4025849785
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the header link \"http://beta2.dadi.cloud/en\"",
+            "result": {
+              "status": "passed",
+              "duration": 927745442
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant page is opened with the page title as \"Open Source web services | DADI\"",
+            "result": {
+              "status": "passed",
+              "duration": 117935493
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 1655900
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Check header links go to the correct page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 1310226275
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the header link \"http://beta2.dadi.cloud/en/roadmap\"",
+            "result": {
+              "status": "passed",
+              "duration": 803868655
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant page is opened with the page title as \"Roadmap | DADI\"",
+            "result": {
+              "status": "passed",
+              "duration": 17955641
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 738774
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Check header links go to the correct page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 1268737436
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the header link \"http://beta2.dadi.cloud/en/network\"",
+            "result": {
+              "status": "passed",
+              "duration": 1670744034
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant page is opened with the page title as \"Network | DADI\"",
+            "result": {
+              "status": "passed",
+              "duration": 27610725
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 159092
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Check header links go to the correct page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 1134008713
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the header link \"http://beta2.dadi.cloud/en/knowledge\"",
+            "result": {
+              "status": "passed",
+              "duration": 1045536493
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant page is opened with the page title as \"Knowledge | DADI\"",
+            "result": {
+              "status": "passed",
+              "duration": 17024970
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 102625
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Check header links go to the correct page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 1319834473
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the header link \"http://beta2.dadi.cloud/en/token\"",
+            "result": {
+              "status": "passed",
+              "duration": 1818935892
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant page is opened with the page title as \"Token | DADI\"",
+            "result": {
+              "status": "passed",
+              "duration": 23322275
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 163898
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Check header links go to the correct page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 1016156900
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the header link \"http://beta2.dadi.cloud/en/partners\"",
+            "result": {
+              "status": "passed",
+              "duration": 696745611
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant page is opened with the page title as \"Partners | DADIO\"",
+            "result": {
+              "status": "failed",
+              "duration": 22682991,
+              "error_message": "AssertionError: expected 'Partners | DADI' to equal 'Partners | DADIO'\n    at World.<anonymous> (/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:13:32)\n    at /usr/local/lib/node_modules/chimp/node_modules/meteor-promise/fiber_pool.js:43:40"
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 361416
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Check header links go to the correct page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 1281115898
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the header link \"http://beta2.dadi.cloud/en/team\"",
+            "result": {
+              "status": "passed",
+              "duration": 2129002033
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant page is opened with the page title as \"The Team | DADI\"",
+            "result": {
+              "status": "passed",
+              "duration": 37915324
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 187328
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "home-page-header-links-check",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Home page header links check",
+    "tags": [],
+    "uri": "/Users/dave/projects/bdd-test/features/home_page_header.feature"
+  },
+  {
+    "description": "  As a user on the DADI.cloud home page they should be able to click the social media icon links in the header\n  and be taken to the relevant website in a new window",
+    "elements": [
+      {
+        "id": "home-page-social-media-links-check;check-social-media-icon-links-open-the-correct-page-in-a-new-window",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Check social media icon links open the correct page in a new window",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 1199296054
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the social media icon for \"github\" in the header \"https://github.com/dadi\"",
+            "result": {
+              "status": "passed",
+              "duration": 3499887686
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_social_media_links_check.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant social media page is opened in a new window with the page title as \"DADI · GitHub\"",
+            "result": {
+              "status": "passed",
+              "duration": 12524531
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_social_media_links_check.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 109388
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "home-page-social-media-links-check;check-social-media-icon-links-open-the-correct-page-in-a-new-window",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Check social media icon links open the correct page in a new window",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 1426627827
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the social media icon for \"medium\" in the header \"https://medium.com/@daditech\"",
+            "result": {
+              "status": "passed",
+              "duration": 3778925053
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_social_media_links_check.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant social media page is opened in a new window with the page title as \"DADI – Medium\"",
+            "result": {
+              "status": "passed",
+              "duration": 14601626
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_social_media_links_check.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 144890
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "home-page-social-media-links-check;check-social-media-icon-links-open-the-correct-page-in-a-new-window",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Check social media icon links open the correct page in a new window",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 1221129357
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the social media icon for \"twitter\" in the header \"https://twitter.com/dadi\"",
+            "result": {
+              "status": "passed",
+              "duration": 1989031897
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_social_media_links_check.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant social media page is opened in a new window with the page title as \"DADI (@dadi) on Twitter\"",
+            "result": {
+              "status": "passed",
+              "duration": 102199361
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_social_media_links_check.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 87554
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "home-page-social-media-links-check;check-social-media-icon-links-open-the-correct-page-in-a-new-window",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Check social media icon links open the correct page in a new window",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 1928685038
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the social media icon for \"reddit\" in the header \"https://www.reddit.com/r/DADI/\"",
+            "result": {
+              "status": "passed",
+              "duration": 3254110300
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_social_media_links_check.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant social media page is opened in a new window with the page title as \"Decentralized web services\"",
+            "result": {
+              "status": "passed",
+              "duration": 73755012
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_social_media_links_check.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 100287
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "home-page-social-media-links-check;check-social-media-icon-links-open-the-correct-page-in-a-new-window",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Check social media icon links open the correct page in a new window",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 1210093286
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the social media icon for \"discord\" in the header \"https://discordapp.com/invite/3sEvuYJ\"",
+            "result": {
+              "status": "passed",
+              "duration": 1465783175
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_social_media_links_check.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant social media page is opened in a new window with the page title as \"Discord\"",
+            "result": {
+              "status": "passed",
+              "duration": 54410477
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_social_media_links_check.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 149687
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "home-page-social-media-links-check;check-social-media-icon-links-open-the-correct-page-in-a-new-window",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Check social media icon links open the correct page in a new window",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 1294390823
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_header.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on the social media icon for \"telegram\" in the header \"https://t.me/dadichat\"",
+            "result": {
+              "status": "passed",
+              "duration": 3613106122
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_social_media_links_check.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the relevant social media page is opened in a new window with the page title as \"Telegram: Contact @dadichat\"",
+            "result": {
+              "status": "passed",
+              "duration": 71450832
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/dave/projects/bdd-test/features/step_definitions/home_page_social_media_links_check.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 89658
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "home-page-social-media-links-check",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Home page social media links check",
+    "tags": [],
+    "uri": "/Users/dave/projects/bdd-test/features/home_page_social_media_links_check.feature"
+  }
+]
