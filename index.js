@@ -1,11 +1,20 @@
-var reporter = require('cucumber-html-reporter');
+var reporter = require('cucumber-html-reporter')
 
 var options = {
   theme: 'bootstrap',
   jsonFile: 'test/report/cucumber_report.json',
   output: 'test/report/cucumber_report.html',
+  screenshotsDirectory: '.screenshots/',
+  screenshotsOnError: true,
+  captureAllStepScreenshots: false,
+  saveScreenshotsToDisk: true,
+  // Note: With a large viewport size and captureAllStepScreenshots enabled,
+  // you may run out of memory. Use browser.setViewportSize to make the
+  // viewport size smaller.
+  saveScreenshotsToReport: true,
   reportSuiteAsScenarios: true,
   launchReport: true,
+  brandTitle: 'Acceptance Tests',
   metadata: {
     "App Version": "beta2",
     "Test Environment": "TEST",
@@ -14,6 +23,6 @@ var options = {
     "Parallel": "Scenarios",
     "Executed": "Remote"
   }
-};
+}
 
-reporter.generate(options);
+reporter.generate(options)
