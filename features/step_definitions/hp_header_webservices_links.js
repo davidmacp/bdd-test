@@ -1,18 +1,18 @@
 const expect = require('chai').expect
 
-module.exports = function() {
+module.exports = function () {
   this.Given(/^a web browser is at the DADI\.cloud home page$/, () => {
-    browser.url("http://beta2.dadi.cloud/")
+    browser.url('http://beta2.dadi.cloud/')
   })
 
   this.When(/^the user clicks on the web services header link$/, () => {
-    browser.url("http://beta2.dadi.cloud/en#web-services")
+    browser.click('a[href="#web-services"]')
   })
 
-  this.Then(/^the sub menu is displayed$/, function() {
-    var submenu = browser.getElementsByClassName('subnav slide-toggle fm')[0]
-    if (submenu) {
-      return true
-    }
+  this.Then(/^the sub menu is displayed$/, function () {
+    const classes = browser.getAttribute('div.subnav', 'class')
+    const classArray = classes.split(' ')
+
+    expect(classArray).to.not.include('hide')
   })
 }
