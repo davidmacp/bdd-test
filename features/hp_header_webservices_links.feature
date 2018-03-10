@@ -8,8 +8,8 @@ Scenario: Check web services links appear
   Given a web browser is at the DADI.cloud home page
   When the user clicks on the web services header link
   Then the sub menu is displayed
-  And the user should see a link for "web"
-  And a link for "publish"
-  And a link for "api"
-  And a link for "cdn"
-  And a link for "queue"
+  And there should be a link for "web"
+  And there should be a link for "publish"
+  And there should be a link for "api"
+  And there should be a link for "cdn"
+  And there should be a link for "queue"
