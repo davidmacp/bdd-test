@@ -14,7 +14,7 @@
             "name": "a web browser is at the DADI.cloud home page",
             "result": {
               "status": "passed",
-              "duration": 704978170
+              "duration": 1034851750
             },
             "line": 6,
             "match": {
@@ -27,7 +27,7 @@
             "name": "there should be 6 Roadmap update articles visible",
             "result": {
               "status": "passed",
-              "duration": 559188815
+              "duration": 194051978
             },
             "line": 10,
             "match": {
@@ -39,7 +39,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 393296
+              "duration": 224811
             },
             "hidden": true,
             "match": {

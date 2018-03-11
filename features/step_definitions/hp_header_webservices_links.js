@@ -10,7 +10,7 @@ module.exports = function () {
   })
 
   this.Then(/^the sub menu is displayed$/, () => {
-    const classes = browser.getAttribute('div.subnav', 'class')
+    const classes = browser.getAttribute('div#web-services', 'class')
     const classArray = classes.split(' ')
 
     expect(classArray).to.not.include('hide')
