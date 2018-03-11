@@ -5,9 +5,8 @@ Feature: Roadmap section
 Background:
   Given a web browser is at the DADI.cloud home page
 
-@ignore
+@watch
 Scenario: 6 articles showing
-  When the user views the Roadmap Updates section
-  Then there are 6 articles showing
+  Then there should be 6 Roadmap update articles visible
 
 Scenario:
