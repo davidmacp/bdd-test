@@ -4,9 +4,31 @@ Feature: Roadmap section
 
 Background:
   Given a web browser is at the DADI.cloud home page
+  When the user scrolls to the Roadmap Updates section
 
-@watch
+Scenario: Roadmap Update section labelled
+  Then the title "ROADMAP UPDATES" should be displayed
+
 Scenario: 6 articles showing
   Then there should be 6 Roadmap update articles visible
 
-Scenario:
+Scenario: Each article has a primary badge
+  Then there should be 6 primary Roadmap badges
+
+Scenario: Each primary badge should be a link to the Roadmap page
+  Then there should be 6 clickable primary Roadmap badges to the Roadmap page
+
+Scenario: Each article has a secondary badge
+  Then there should be 6 secondary badges
+
+Scenario: Each article has a clickable title and description below it
+  Then there should be 6 clickable article titles
+  And 6 article descriptions
+
+Scenario: Each article has a footer that contains a date, a team member name and an image
+  Then there should be 6 valid dates
+  And there should be 6 team member names
+  And there should be 6 team member images
+
+Scenario: Roadmap section has a 'View all updates' link
+  Then there should be a "View all updates →" link
