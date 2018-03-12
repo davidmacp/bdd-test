@@ -3,10 +3,10 @@
     "description": "  As a user on the DADI.cloud home page they are able to view and interact with the Roadmaps section",
     "elements": [
       {
-        "id": "roadmap-section;6-articles-showing",
+        "id": "roadmap-section;roadmap-update-section-labelled",
         "keyword": "Scenario",
-        "line": 9,
-        "name": "6 articles showing",
+        "line": 10,
+        "name": "Roadmap Update section labelled",
         "steps": [
           {
             "arguments": [],
@@ -14,7 +14,7 @@
             "name": "a web browser is at the DADI.cloud home page",
             "result": {
               "status": "passed",
-              "duration": 1034851750
+              "duration": 531867424
             },
             "line": 6,
             "match": {
@@ -23,15 +23,41 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "name": "there should be 6 Roadmap update articles visible",
+            "keyword": "When ",
+            "name": "the user scrolls to the Roadmap Updates section",
             "result": {
               "status": "passed",
-              "duration": 194051978
+              "duration": 159341146
             },
-            "line": 10,
+            "line": 7,
             "match": {
               "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/hp_roadmap_section.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the title \"ROADMAP UPDATES\" should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 256304670
+            },
+            "line": 11,
+            "match": {
+              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/hp_roadmap_section.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the element \"//span[text()='Roadmap updates']\" is visible",
+            "result": {
+              "status": "passed",
+              "duration": 62182078
+            },
+            "line": 12,
+            "match": {
+              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/then.js:4"
             }
           },
           {
@@ -39,7 +65,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 224811
+              "duration": 249969
             },
             "hidden": true,
             "match": {
@@ -50,7 +76,73 @@
         "tags": [
           {
             "name": "@watch",
-            "line": 8
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "roadmap-section;each-primary-badge-should-be-a-link-to-the-roadmap-page",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Each primary badge should be a link to the Roadmap page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "a web browser is at the DADI.cloud home page",
+            "result": {
+              "status": "passed",
+              "duration": 424481415
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/hp_header_webservices_links.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user scrolls to the Roadmap Updates section",
+            "result": {
+              "status": "passed",
+              "duration": 199569752
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/hp_roadmap_section.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "there should be 6 clickable primary Roadmap badges to the Roadmap page",
+            "result": {
+              "status": "passed",
+              "duration": 34051063
+            },
+            "line": 22,
+            "match": {
+              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/hp_roadmap_section.js:26"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 131634
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 20
           }
         ],
         "type": "scenario"
