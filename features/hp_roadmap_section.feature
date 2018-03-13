@@ -3,7 +3,7 @@ Feature: Roadmap section
   As a user on the DADI.cloud home page they are able to view and interact with the Roadmaps section
 
 Background:
-  Given a web browser is at the DADI.cloud home page
+  Given I am on the DADI.cloud homepage
   When the user scrolls to the Roadmap Updates section
 
 Scenario: Roadmap Update section labelled

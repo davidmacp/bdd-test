@@ -7,5 +7,7 @@ module.exports = function (selector) {
     return
   }
 
+  console.log(selector)
+
   this.browser.scroll(selector)
 }
