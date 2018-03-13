@@ -6,7 +6,6 @@ Background:
   Given a web browser is at the DADI.cloud home page
   When the user scrolls to the Roadmap Updates section
 
-@watch
 Scenario: Roadmap Update section labelled
   Then the title "ROADMAP UPDATES" should be displayed
   Then I expect that header "#stickContainer .col:nth-of-type(1) .hdr" matches the text "ROADMAP UPDATES"
@@ -18,7 +17,6 @@ Scenario: 6 articles showing
 Scenario: Each article has a primary badge
   Then there should be 6 primary Roadmap badges
 
-@watch
 Scenario: Each primary badge should be a link to the Roadmap page
   Then there should be 6 clickable primary Roadmap badges to the Roadmap page
 

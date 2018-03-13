@@ -1,10 +1,6 @@
 const expect = require('chai').expect
 
-module.exports = function () {
-  this.Given(/^a web browser is at the DADI\.cloud home page$/, () => {
-    browser.url('http://beta2.dadi.cloud/')
-  })
-
+module.exports = function() {
   this.When(/^the user clicks on the web services header link$/, () => {
     browser.click('a[href="#web-services"]')
   })

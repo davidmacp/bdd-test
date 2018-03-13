@@ -4,16 +4,16 @@ Feature: Home page header links check
   relevant screen
 
 Scenario Outline: Check header links go to the correct page
-  Given a web browser is at the DADI.cloud home page "<homepage>"
-  When the user clicks on the "<pagename>" header link "<homepage>""<url>"
+  Given a web browser is at the DADI.cloud home page
+  When the user clicks on the "<pagename>" header link http://beta2.dadi.cloud/"<url>"
   Then the relevant page is opened with the page title as "<title>"
 
   Examples:
-  | homepage                 | pagename  | url          | title                            |
-  | http://beta2.dadi.cloud/ | Overview  | en           | Decentralized web services \| DADI |
-  | http://beta2.dadi.cloud/ | Roadmap   | en/roadmap   | Roadmap \| DADI |
-  | http://beta2.dadi.cloud/ | Network   | en/network   | Network \| DADI |
-  | http://beta2.dadi.cloud/ | Knowledge | en/knowledge | Knowledge \| DADI |
-  | http://beta2.dadi.cloud/ | Token     | en/token     | Token \| DADI |
-  | http://beta2.dadi.cloud/ | Partners  | en/partners  | Partners \| DADI |
-  | http://beta2.dadi.cloud/ | Team      | en/team      | The Team \| DADI |
+  | pagename  | url          | title                            |
+  | Overview  | en           | Decentralized web services \| DADI |
+  | Roadmap   | en/roadmap   | Roadmap \| DADI |
+  | Network   | en/network   | Network \| DADI |
+  | Knowledge | en/knowledge | Knowledge \| DADI |
+  | Token     | en/token     | Token \| DADI |
+  | Partners  | en/partners  | Partners \| DADI |
+  | Team      | en/team      | The Team \| DADI |
