@@ -8,6 +8,10 @@ const expect = require('chai').expect
  * @param  {String}   expectedValue The value to check against
  */
 module.exports = (name, falseCase, expectedValue) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * The cookie retrieved from the this.browser object
      * @type {Object}

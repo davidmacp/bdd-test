@@ -9,6 +9,10 @@ const expect = require('chai').expect
  * @param  {String}   axis              The axis to check on (x or y)
  */
 module.exports = (elem, falseCase, expectedPosition, axis) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * Get the location of the element on the given axis
      * @type {[type]}

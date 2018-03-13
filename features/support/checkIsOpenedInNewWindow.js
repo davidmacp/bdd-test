@@ -8,6 +8,10 @@ const expect = require('chai').expect
 /* eslint-disable no-unused-vars */
 module.exports = (expectedUrl, obsolete) => {
 /* eslint-enable no-unused-vars */
+
+  if (!this.browser) {
+    return
+  }
     /**
      * All the current window handles
      * @type {Object}

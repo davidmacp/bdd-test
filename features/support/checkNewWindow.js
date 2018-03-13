@@ -7,6 +7,10 @@ const expect = require('chai').expect
  *                              or not
  */
 module.exports = (obsolete, falseCase) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * The handles of all open windows/tabs
      * @type {Object}

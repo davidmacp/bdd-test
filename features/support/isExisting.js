@@ -6,6 +6,10 @@ const expect = require('chai').expect
  * @param  {String}   falseCase Whether to check if the element exists or not
  */
 module.exports = (selector, falseCase) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * Elements found in the DOM
      * @type {Object}

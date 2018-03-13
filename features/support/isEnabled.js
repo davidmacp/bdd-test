@@ -7,6 +7,10 @@ const expect = require('chai').expect
  *                              or not
  */
 module.exports = (element, falseCase) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * The enabled state of the given element
      * @type {Boolean}

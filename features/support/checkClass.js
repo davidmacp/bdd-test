@@ -8,6 +8,10 @@ const expect = require('chai').expect
  * @param  {String}   expectedClassName The class name to check
  */
 module.exports = (elem, falseCase, expectedClassName) => {
+  if (!this.browser) {
+    return
+  }
+
 /**
  * List of all the classes of the element
  * @type {Array}

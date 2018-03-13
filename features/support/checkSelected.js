@@ -7,6 +7,10 @@ const expect = require('chai').expect
  *                              not
  */
 module.exports = (element, falseCase) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * The selected state
      * @type {Boolean}

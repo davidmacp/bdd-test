@@ -8,6 +8,10 @@ const expect = require('chai').expect
  * @param  {String}   element2  Element selector for the second element
  */
 module.exports = (element1, falseCase, element2) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * The text of the first element
      * @type {String}

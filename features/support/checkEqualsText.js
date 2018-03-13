@@ -15,7 +15,7 @@ module.exports = function (elementType, element, falseCase, expectedText) {
    */
   let command = 'getValue'
 
-  if (!this.this.browser) {
+  if (!this.browser) {
     return
   }
 

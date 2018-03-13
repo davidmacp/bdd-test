@@ -7,6 +7,10 @@ const expect = require('chai').expect
  *                              or not
  */
 module.exports = (selector, falseCase) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * Value of the hasFocus function for the given element
      * @type {Boolean}

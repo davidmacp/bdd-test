@@ -8,6 +8,10 @@ const expect = require('chai').expect
  *                                  text or not
  */
 module.exports = (elementType, element, falseCase) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * The command to perform on the this.browser object
      * @type {String}

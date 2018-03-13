@@ -7,6 +7,10 @@ import checkIfElementExists from '../lib/checkIfElementExists'
  * @param  {String}   elem       Element selector
  */
 module.exports = (isExisting, elem) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * Falsecase assertion
      * @type {Boolean}

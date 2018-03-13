@@ -7,6 +7,10 @@ const expect = require('chai').expect
  * @param  {String}   falseState Whether to check if the modal was opened or not
  */
 module.exports = (modalType, falseState) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * The text of the prompt
      * @type {String}

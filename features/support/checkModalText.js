@@ -9,6 +9,10 @@ const expect = require('chai').expect
  * @param  {String}   expectedText  The text to check against
  */
 module.exports = (modalType, falseState, expectedText) => {
+  if (!this.browser) {
+    return
+  }
+
   try {
         /**
          * The text of the current modal

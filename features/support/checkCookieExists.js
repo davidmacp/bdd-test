@@ -7,6 +7,10 @@ const expect = require('chai').expect
  *                              not
  */
 module.exports = (name, falseCase) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * The cookie as retrieved from the this.browser
      * @type {Object}

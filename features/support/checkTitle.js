@@ -7,6 +7,10 @@ const expect = require('chai').expect
  * @param  {Type}     expectedTitle The expected title
  */
 module.exports = (falseCase, expectedTitle) => {
+  if (!this.browser) {
+    return
+  }
+
     /**
      * The title of the current this.browser window
      * @type {String}
