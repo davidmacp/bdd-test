@@ -9,17 +9,15 @@ const expect = require('chai').expect
  * @param  {String}   expectedText  The text to validate against
  */
 module.exports = function (elementType, element, falseCase, expectedText) {
-    /**
-     * The command to execute on the browser object
-     * @type {String}
-     */
+  /**
+   * The command to execute on the browser object
+   * @type {String}
+   */
   let command = 'getValue'
 
   if (!this.browser) {
     return
   }
-
-  console.log(arguments)
 
   if (
         elementType === 'button' ||
@@ -29,19 +27,19 @@ module.exports = function (elementType, element, falseCase, expectedText) {
     command = 'getText'
   }
 
-    /**
-     * The expected text to validate against
-     * @type {String}
-     */
+  /**
+   * The expected text to validate against
+   * @type {String}
+   */
   let parsedExpectedText = expectedText
 
-    /**
-     * Whether to check if the content equals the given text or not
-     * @type {Boolean}
-     */
+  /**
+   * Whether to check if the content equals the given text or not
+   * @type {Boolean}
+   */
   let boolFalseCase = !!falseCase
 
-    // Check for empty element
+  // Check for empty element
   if (typeof parsedExpectedText === 'function') {
     parsedExpectedText = ''
 
@@ -54,8 +52,6 @@ module.exports = function (elementType, element, falseCase, expectedText) {
   }
 
   const text = this.browser[command](element)
-
-  console.log(this.browser.getText(element), text)
 
   if (boolFalseCase) {
     expect(parsedExpectedText).to.not.equal(text)
