@@ -6,7 +6,7 @@ const expect = require('chai').expect
  *                                    the URL path or not
  * @param  {String}   expectedUrlPart The string to check for
  */
-module.exports = (falseCase, expectedUrlPart) => {
+module.exports = function (falseCase, expectedUrlPart) {
   if (!this.browser) {
     return
   }

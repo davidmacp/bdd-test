@@ -8,7 +8,7 @@ const expect = require('chai').expect
  * @param  {String}   expectedSize Expected size
  * @param  {String}   dimension    Dimension to check (broad or tall)
  */
-module.exports = (elem, falseCase, expectedSize, dimension) => {
+module.exports = function (elem, falseCase, expectedSize, dimension) {
   if (!this.browser) {
     return
   }

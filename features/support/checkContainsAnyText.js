@@ -7,8 +7,8 @@ const expect = require('chai').expect
  * @param  {String}   falseCase     Whether to check if the content contains
  *                                  text or not
  */
-module.exports = (elementType, element, falseCase) => {
-  if (!this.browser) {
+module.exports = function (elementType, element, falseCase) {
+  if (!this || !this.browser) {
     return
   }
 

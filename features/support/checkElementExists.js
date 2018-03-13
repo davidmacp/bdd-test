@@ -1,4 +1,4 @@
-import checkIfElementExists from '../lib/checkIfElementExists'
+// const checkIfElementExists = require('../lib/checkIfElementExists')
 
 /**
  * Check if the given element exists
@@ -6,20 +6,20 @@ import checkIfElementExists from '../lib/checkIfElementExists'
  *                               (an or no)
  * @param  {String}   elem       Element selector
  */
-module.exports = (isExisting, elem) => {
-  if (!this.browser) {
-    return
-  }
+// module.exports = function (isExisting, elem) {
+//   if (!this.browser) {
+//     return
+//   }
 
     /**
      * Falsecase assertion
      * @type {Boolean}
      */
-  let falseCase = true
+//   let falseCase = true
 
-  if (isExisting === 'an') {
-    falseCase = false
-  }
+//   if (isExisting === 'an') {
+//     falseCase = false
+//   }
 
-  checkIfElementExists(elem, falseCase)
-}
+//   checkIfElementExists(elem, falseCase)
+// }

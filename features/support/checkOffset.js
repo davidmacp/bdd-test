@@ -8,7 +8,7 @@ const expect = require('chai').expect
  * @param  {String}   expectedPosition  The position to check against
  * @param  {String}   axis              The axis to check on (x or y)
  */
-module.exports = (elem, falseCase, expectedPosition, axis) => {
+module.exports = function (elem, falseCase, expectedPosition, axis) {
   if (!this.browser) {
     return
   }

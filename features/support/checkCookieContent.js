@@ -7,7 +7,7 @@ const expect = require('chai').expect
  *                                  or not
  * @param  {String}   expectedValue The value to check against
  */
-module.exports = (name, falseCase, expectedValue) => {
+module.exports = function (name, falseCase, expectedValue) {
   if (!this.browser) {
     return
   }

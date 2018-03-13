@@ -6,7 +6,7 @@ const expect = require('chai').expect
  * @param  {String}   falseCase Whether to check if a new window/tab was opened
  *                              or not
  */
-module.exports = (obsolete, falseCase) => {
+module.exports = function (obsolete, falseCase) {
   if (!this.browser) {
     return
   }

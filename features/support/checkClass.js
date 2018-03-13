@@ -7,7 +7,7 @@ const expect = require('chai').expect
  *                                      or not ('has', 'does not have')
  * @param  {String}   expectedClassName The class name to check
  */
-module.exports = (elem, falseCase, expectedClassName) => {
+module.exports = function (elem, falseCase, expectedClassName) {
   if (!this.browser) {
     return
   }

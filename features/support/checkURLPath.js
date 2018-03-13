@@ -6,7 +6,7 @@ const expect = require('chai').expect
  *                                 expected value or not
  * @param  {String}   expectedPath The expected path to match against
  */
-module.exports = (falseCase, expectedPath) => {
+module.exports = function (falseCase, expectedPath) {
   if (!this.browser) {
     return
   }

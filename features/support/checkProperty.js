@@ -10,7 +10,7 @@ const expect = require('chai').expect
  *                                  attribute matches or not
  * @param  {String}   expectedValue The value to match against
  */
-module.exports = (isCSS, attrName, elem, falseCase, expectedValue) => {
+module.exports = function (isCSS, attrName, elem, falseCase, expectedValue) {
   if (!this.browser) {
     return
   }

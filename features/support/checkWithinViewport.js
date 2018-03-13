@@ -6,7 +6,7 @@ const expect = require('chai').expect
  * @param  {String}   falseCase Whether to check if the element is visible
  *                              within the current viewport or not
  */
-module.exports = (element, falseCase) => {
+module.exports = function (element, falseCase) {
   if (!this.browser) {
     return
   }

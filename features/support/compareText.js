@@ -7,7 +7,7 @@ const expect = require('chai').expect
  *                              elements match or not
  * @param  {String}   element2  Element selector for the second element
  */
-module.exports = (element1, falseCase, element2) => {
+module.exports = function (element1, falseCase, element2) {
   if (!this.browser) {
     return
   }

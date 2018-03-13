@@ -6,7 +6,7 @@ const expect = require('chai').expect
  * @param  {String}   falseCase Whether to check if the given element has focus
  *                              or not
  */
-module.exports = (selector, falseCase) => {
+module.exports = function (selector, falseCase) {
   if (!this.browser) {
     return
   }

@@ -6,7 +6,7 @@ const expect = require('chai').expect
  *                                  expected value or not
  * @param  {Type}     expectedTitle The expected title
  */
-module.exports = (falseCase, expectedTitle) => {
+module.exports = function (falseCase, expectedTitle) {
   if (!this.browser) {
     return
   }

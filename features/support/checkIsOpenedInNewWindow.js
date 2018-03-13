@@ -6,7 +6,7 @@ const expect = require('chai').expect
  * @param  {String}   obsolete    Indicator for the type (window or tab) unused
  */
 /* eslint-disable no-unused-vars */
-module.exports = (expectedUrl, obsolete) => {
+module.exports = function (expectedUrl, obsolete) {
 /* eslint-enable no-unused-vars */
 
   if (!this.browser) {

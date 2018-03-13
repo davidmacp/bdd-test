@@ -1,6 +1,6 @@
 const checkContainsAnyText = require('./checkContainsAnyText')
 
-module.exports = (elementType, element, falseCase) => {
+module.exports = function (elementType, element, falseCase) {
   let newFalseCase = true
 
   if (typeof falseCase === 'function') {

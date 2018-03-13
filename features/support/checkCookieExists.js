@@ -6,7 +6,7 @@ const expect = require('chai').expect
  * @param  {[type]}   falseCase Whether or not to check if the cookie exists or
  *                              not
  */
-module.exports = (name, falseCase) => {
+module.exports = function (name, falseCase) {
   if (!this.browser) {
     return
   }

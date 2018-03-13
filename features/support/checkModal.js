@@ -6,7 +6,7 @@ const expect = require('chai').expect
  *                               confirmbox or prompt)
  * @param  {String}   falseState Whether to check if the modal was opened or not
  */
-module.exports = (modalType, falseState) => {
+module.exports = function (modalType, falseState) {
   if (!this.browser) {
     return
   }

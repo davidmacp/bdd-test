@@ -8,7 +8,7 @@ const expect = require('chai').expect
  * @param  {String}   falseState    Whether to check if the text matches or not
  * @param  {String}   expectedText  The text to check against
  */
-module.exports = (modalType, falseState, expectedText) => {
+module.exports = function (modalType, falseState, expectedText) {
   if (!this.browser) {
     return
   }
