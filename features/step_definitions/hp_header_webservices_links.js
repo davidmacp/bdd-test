@@ -14,10 +14,10 @@ module.exports = function () {
 
   this.Then(/^there should be a link for "([^"]*)"$/, linkText => {
     // get text value of all links within the submenu
-    let submenuItems = browser.getText('div.subnav ul li a') // [ 'Web', 'Publish', 'API', 'CDN', 'Queue' ]
 
-    // lowercase all text values
-    submenuItems = submenuItems.map(item => {
+    // [ 'Web', 'Publish', 'API', 'CDN', 'Queue' ]
+    let submenuItems = browser.getText('div.subnav ul li a').map(item => {
+      // lowercase all text values
       return item.toLowerCase()
     })
 

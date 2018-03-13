@@ -6,7 +6,6 @@ Feature: Home page documentation link
 Background:
   Given I open the url "http://beta2.dadi.cloud/en"
 
-@watch
 Scenario: Check documentation link works
   When I click on the link "Documentation"
   Then I expect the url "https://docs.dadi.tech" is opened in a new window
