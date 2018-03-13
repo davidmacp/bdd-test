@@ -4,7 +4,7 @@ Feature: Roadmap section
 
 Background:
   Given a web browser is at the DADI.cloud home page
-
+  When the user scrolls to the Roadmap Updates section
 
 @watch
 Scenario: Roadmap Update section labelled
