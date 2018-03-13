@@ -5,33 +5,20 @@
       {
         "id": "home-page-documentation-link;check-documentation-link-works",
         "keyword": "Scenario",
-        "line": 11,
+        "line": 10,
         "name": "Check documentation link works",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "I am on the DADI.cloud homepage",
+            "name": "I open the url \"http://beta2.dadi.cloud/en\"",
             "result": {
               "status": "passed",
-              "duration": 661384
+              "duration": 743973020
             },
             "line": 7,
             "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/given.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I pause for 200ms",
-            "result": {
-              "status": "passed",
-              "duration": 217858124
-            },
-            "line": 8,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/when.js:57"
+              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/given.js:29"
             }
           },
           {
@@ -40,9 +27,9 @@
             "name": "I click on the link \"Documentation\"",
             "result": {
               "status": "passed",
-              "duration": 6088969664
+              "duration": 5857777183
             },
-            "line": 12,
+            "line": 11,
             "match": {
               "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/when.js:32"
             }
@@ -53,9 +40,9 @@
             "name": "I expect the url \"https://docs.dadi.tech\" is opened in a new window",
             "result": {
               "status": "passed",
-              "duration": 1108594126
+              "duration": 1900029458
             },
-            "line": 13,
+            "line": 12,
             "match": {
               "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/then.js:151"
             }
@@ -65,7 +52,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 381338
+              "duration": 1351326
             },
             "hidden": true,
             "match": {
@@ -76,7 +63,7 @@
         "tags": [
           {
             "name": "@watch",
-            "line": 10
+            "line": 9
           }
         ],
         "type": "scenario"
@@ -88,478 +75,5 @@
     "name": "Home page documentation link",
     "tags": [],
     "uri": "/Users/jameslambie/projects/bdd-test/features/hp_header_documentation_link.feature"
-  },
-  {
-    "description": "  As a user on the DADI.cloud home page they should be able to click the links in the header and be taken to the\n  relevant screen",
-    "elements": [
-      {
-        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Check header links go to the correct page",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "I am on the DADI.cloud homepage",
-            "result": {
-              "status": "passed",
-              "duration": 252473
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/given.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the user clicks on the \"Overview\" header link http://beta2.dadi.cloud/\"en\"",
-            "result": {
-              "status": "passed",
-              "duration": 1436937625
-            },
-            "line": 11,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/when.js:20"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I expect that the title is \"Decentralized web services | DADI\"",
-            "result": {
-              "status": "passed",
-              "duration": 42895067
-            },
-            "line": 12,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/then.js:31"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 541873
-            },
-            "hidden": true,
-            "match": {
-              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@watch",
-            "line": 9
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Check header links go to the correct page",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "I am on the DADI.cloud homepage",
-            "result": {
-              "status": "passed",
-              "duration": 155969
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/given.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the user clicks on the \"Roadmap\" header link http://beta2.dadi.cloud/\"en/roadmap\"",
-            "result": {
-              "status": "passed",
-              "duration": 423018069
-            },
-            "line": 11,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/when.js:20"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I expect that the title is \"Roadmap | DADI\"",
-            "result": {
-              "status": "passed",
-              "duration": 47632292
-            },
-            "line": 12,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/then.js:31"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 202860
-            },
-            "hidden": true,
-            "match": {
-              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@watch",
-            "line": 9
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
-        "keyword": "Scenario",
-        "line": 18,
-        "name": "Check header links go to the correct page",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "I am on the DADI.cloud homepage",
-            "result": {
-              "status": "passed",
-              "duration": 168764
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/given.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the user clicks on the \"Network\" header link http://beta2.dadi.cloud/\"en/network\"",
-            "result": {
-              "status": "passed",
-              "duration": 742717181
-            },
-            "line": 11,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/when.js:20"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I expect that the title is \"Network | DADI\"",
-            "result": {
-              "status": "passed",
-              "duration": 76816277
-            },
-            "line": 12,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/then.js:31"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 112886
-            },
-            "hidden": true,
-            "match": {
-              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@watch",
-            "line": 9
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "Check header links go to the correct page",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "I am on the DADI.cloud homepage",
-            "result": {
-              "status": "passed",
-              "duration": 147821
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/given.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the user clicks on the \"Knowledge\" header link http://beta2.dadi.cloud/\"en/knowledge\"",
-            "result": {
-              "status": "passed",
-              "duration": 341560326
-            },
-            "line": 11,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/when.js:20"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I expect that the title is \"Knowledge | DADI\"",
-            "result": {
-              "status": "passed",
-              "duration": 35547149
-            },
-            "line": 12,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/then.js:31"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 128145
-            },
-            "hidden": true,
-            "match": {
-              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@watch",
-            "line": 9
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
-        "keyword": "Scenario",
-        "line": 20,
-        "name": "Check header links go to the correct page",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "I am on the DADI.cloud homepage",
-            "result": {
-              "status": "passed",
-              "duration": 987949
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/given.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the user clicks on the \"Token\" header link http://beta2.dadi.cloud/\"en/token\"",
-            "result": {
-              "status": "passed",
-              "duration": 343983317
-            },
-            "line": 11,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/when.js:20"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I expect that the title is \"Token | DADI\"",
-            "result": {
-              "status": "passed",
-              "duration": 15489933
-            },
-            "line": 12,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/then.js:31"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 74380
-            },
-            "hidden": true,
-            "match": {
-              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@watch",
-            "line": 9
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
-        "keyword": "Scenario",
-        "line": 21,
-        "name": "Check header links go to the correct page",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "I am on the DADI.cloud homepage",
-            "result": {
-              "status": "passed",
-              "duration": 130038
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/given.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the user clicks on the \"Partners\" header link http://beta2.dadi.cloud/\"en/partners\"",
-            "result": {
-              "status": "passed",
-              "duration": 216332056
-            },
-            "line": 11,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/when.js:20"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I expect that the title is \"Partners | DADI\"",
-            "result": {
-              "status": "passed",
-              "duration": 17085384
-            },
-            "line": 12,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/then.js:31"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 102456
-            },
-            "hidden": true,
-            "match": {
-              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@watch",
-            "line": 9
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "home-page-header-links-check;check-header-links-go-to-the-correct-page",
-        "keyword": "Scenario",
-        "line": 22,
-        "name": "Check header links go to the correct page",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "I am on the DADI.cloud homepage",
-            "result": {
-              "status": "passed",
-              "duration": 126348
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/given.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the user clicks on the \"Team\" header link http://beta2.dadi.cloud/\"en/team\"",
-            "result": {
-              "status": "passed",
-              "duration": 258027971
-            },
-            "line": 11,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/when.js:20"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I expect that the title is \"The Team | DADI\"",
-            "result": {
-              "status": "passed",
-              "duration": 29829861
-            },
-            "line": 12,
-            "match": {
-              "location": "/Users/jameslambie/projects/bdd-test/features/step_definitions/then.js:31"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 125867
-            },
-            "hidden": true,
-            "match": {
-              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@watch",
-            "line": 9
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "home-page-header-links-check",
-    "keyword": "Feature",
-    "line": 1,
-    "name": "Home page header links check",
-    "tags": [],
-    "uri": "/Users/jameslambie/projects/bdd-test/features/hp_header_links.feature"
   }
 ]

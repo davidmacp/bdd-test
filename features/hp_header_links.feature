@@ -5,8 +5,8 @@ Feature: Home page header links check
 
 Background:
   Given I am on the DADI.cloud homepage
+  And I wait on element "footer" for 1500ms to be visible
 
-@watch
 Scenario Outline: Check header links go to the correct page
   When the user clicks on the "<pagename>" header link http://beta2.dadi.cloud/"<url>"
   Then I expect that the title is "<title>"

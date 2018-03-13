@@ -20,9 +20,11 @@ const openWebsite = require('../support/action/openWebsite')
 const resizeScreenSize = require('../support/action/resizeScreenSize')
 
 module.exports = function () {
-  this.Given(/^I am on the DADI\.cloud homepage$/, function () {
-    openWebsite('http://beta2.dadi.cloud/en')
-  })
+  this.Given(
+    /^I am on the DADI\.cloud homepage$/, () => {
+      openWebsite('url', 'http://beta2.dadi.cloud/en') // TODO: pull from config
+    }
+  )
 
   this.Given(
     /^I open the (url|site) "([^"]*)?"$/,

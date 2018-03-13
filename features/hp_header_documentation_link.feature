@@ -4,8 +4,7 @@ Feature: Home page documentation link
   to the DADI.tech website
 
 Background:
-  Given I am on the DADI.cloud homepage
-  And I pause for 200ms
+  Given I open the url "http://beta2.dadi.cloud/en"
 
 @watch
 Scenario: Check documentation link works

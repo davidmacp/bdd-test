@@ -12,5 +12,14 @@ module.exports = {
   // you may run out of memory. Use browser.setViewportSize to make the
   // viewport size smaller.
   saveScreenshotsToReport: true,
-  jsonOutput: 'test/report/cucumber_report.json'
+  jsonOutput: 'test/report/cucumber_report.json',
+
+  // - - - - WEBDRIVER-IO  - - - -
+  webdriverio: {
+    baseUrl: null,
+    coloredLogs: true,
+    screenshotPath: null,
+    waitforTimeout: 500,
+    waitforInterval: 250
+  }
 }
