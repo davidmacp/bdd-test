@@ -4,11 +4,12 @@ Feature: Roadmap section
 
 Background:
   Given a web browser is at the DADI.cloud home page
-  When the user scrolls to the Roadmap Updates section
+
 
 @watch
 Scenario: Roadmap Update section labelled
   Then the title "ROADMAP UPDATES" should be displayed
+  Then I expect that header "#stickContainer .col:nth-of-type(1) .hdr" matches the text "ROADMAP UPDATES"
   Then the element "//span[text()='Roadmap updates']" is visible
 
 Scenario: 6 articles showing
