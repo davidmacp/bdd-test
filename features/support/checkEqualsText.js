@@ -10,12 +10,12 @@ const expect = require('chai').expect
  */
 module.exports = function (elementType, element, falseCase, expectedText) {
   /**
-   * The command to execute on the browser object
+   * The command to execute on the this.browser object
    * @type {String}
    */
   let command = 'getValue'
 
-  if (!this.browser) {
+  if (!this.this.browser) {
     return
   }
 

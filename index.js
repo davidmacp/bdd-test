@@ -16,12 +16,12 @@ var options = {
   launchReport: true,
   brandTitle: 'Acceptance Tests',
   metadata: {
-    "App Version": "beta2",
-    "Test Environment": "TEST",
-    "Browser": "Chrome  64.0.3282.186",
-    "Platform": "MAC OSX",
-    "Parallel": "Scenarios",
-    "Executed": "Remote"
+    'App Version': 'beta2',
+    'Test Environment': 'TEST',
+    'Browser': 'Chrome  64.0.3282.186',
+    'Platform': 'MAC OSX',
+    'Parallel': 'Scenarios',
+    'Executed': 'Remote'
   }
 }
 

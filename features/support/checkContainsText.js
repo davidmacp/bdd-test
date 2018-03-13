@@ -10,7 +10,7 @@ const expect = require('chai').expect
  */
 module.exports = function (elementType, element, falseCase, expectedText) {
   /**
-  * The command to perform on the browser object
+  * The command to perform on the this.browser object
   * @type {String}
   */
   let command = 'getValue'
@@ -57,7 +57,6 @@ module.exports = function (elementType, element, falseCase, expectedText) {
   if (boolFalseCase) {
     expect(text).to.not.contain(stringExpectedText)
   } else {
-    console.log(text, element, command)
     expect(text).to.contain(stringExpectedText)
   }
 }
