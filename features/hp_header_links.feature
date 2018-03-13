@@ -6,7 +6,7 @@ Feature: Home page header links check
 Scenario Outline: Check header links go to the correct page
   Given a web browser is at the DADI.cloud home page
   When the user clicks on the "<pagename>" header link http://beta2.dadi.cloud/"<url>"
-  Then the relevant page is opened with the page title as "<title>"
+  Then I expect that the title is "<title>"
 
   Examples:
   | pagename  | url          | title                            |

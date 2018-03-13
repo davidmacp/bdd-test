@@ -6,4 +6,4 @@ Feature: Home page documentation link
 Scenario: Check documentation link works
   Given a web browser is at the DADI.cloud home page
   When the user clicks on the documentation link
-  Then the DADI.tech website is opened with the page title as "DADI Documentation"
+  Then I expect that the title is "DADI Documentation"
