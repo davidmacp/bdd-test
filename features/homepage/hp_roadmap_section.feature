@@ -2,6 +2,7 @@ Feature: Roadmap section
 
   As a user on the DADI.cloud home page they are able to view and interact with the Roadmaps section
 
+@watch
 Scenario: Roadmap Update section labelled
   Given I open the url "http://beta2.dadi.cloud/en"
   When the user scrolls to the Roadmap Updates section
