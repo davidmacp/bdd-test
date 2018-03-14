@@ -4,7 +4,7 @@ Feature: Home page header links check
   relevant screen
 
 Background:
-  Given I am on the DADI.cloud homepage
+  Given I open the url "http://beta2.dadi.cloud/en"
   And I wait on element "footer" for 1500ms to be visible
 
 Scenario Outline: Check header links go to the correct page
