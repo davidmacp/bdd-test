@@ -19,12 +19,12 @@ Scenario: Each box has a description text
 
 Scenario: Each box has an image icon displayed
   Then there should be 11 image icons displayed
-@ignore
+
 Scenario: Each of the current core product boxes has a 'Learn more' link
   Then there should be 5 "Learn more" links in the core products boxes
-@ignore
+
 Scenario: Each of the current core product boxes has a 'Latest updates' link
-  Then there should be 5 "Latest updates" links in the core products boxes
+  Then there should be 5 Latest updates links in the core products boxes
 
 Scenario: Each of the current core product boxes has a 'How to install' link
   Then there should be 5 "How to install" links in the core products boxes
