@@ -8,24 +8,22 @@ const expect = require('chai').expect
  *                                  the given text or not
  * @param  {String}   expectedText  The text to check against
  */
-module.exports = function (elementType, element, falseCase, expectedText) {
+module.exports = function(elementType, element, falseCase, expectedText) {
   /**
-  * The command to perform on the this.browser object
-  * @type {String}
-  */
+   * The command to perform on the this.browser object
+   * @type {String}
+   */
   let command = 'getValue'
 
   if (!this.browser) {
     return
   }
 
-  console.log(arguments)
-
   if (
-        elementType === 'button' ||
-        elementType === 'header' ||
-        this.browser.getAttribute(element, 'value') === null
-    ) {
+    elementType === 'button' ||
+    elementType === 'header' ||
+    this.browser.getAttribute(element, 'value') === null
+  ) {
     command = 'getText'
   }
 

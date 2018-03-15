@@ -6,34 +6,34 @@ const expect = require('chai').expect
  *                                 expected value or not
  * @param  {String}   expectedPath The expected path to match against
  */
-module.exports = function (falseCase, expectedPath) {
+module.exports = function(falseCase, expectedPath) {
   if (!this.browser) {
     return
   }
 
-    /**
-     * The URL of the current this.browser window
-     * @type {String}
-     */
+  /**
+   * The URL of the current this.browser window
+   * @type {String}
+   */
   let currentUrl = this.browser.url().value.replace(/http(s?):\/\//, '')
 
-    /**
-     * The base URL of the current this.browser window
-     * @type {Object}
-     */
+  /**
+   * The base URL of the current this.browser window
+   * @type {Object}
+   */
   const domain = `${currentUrl.split('/')[0]}`
 
   currentUrl = currentUrl.replace(domain, '')
 
   if (falseCase) {
     expect(currentUrl).to.not
-            .equal(expectedPath, `expected path not to be "${currentUrl}"`)
+      .equal(expectedPath, `expected path not to be "${currentUrl}"`)
   } else {
     expect(currentUrl).to
-            .equal(
-                expectedPath,
-                `expected path to be "${expectedPath}" but found ` +
-                `"${currentUrl}"`
-            )
+      .equal(
+        expectedPath,
+        `expected path to be "${expectedPath}" but found ` +
+        `"${currentUrl}"`
+      )
   }
 }

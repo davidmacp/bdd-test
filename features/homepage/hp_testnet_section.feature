@@ -11,17 +11,19 @@ Scenario: There is a world map displayed
   Then I expect that element "#map" is visible
 
 Scenario: Has a box for average response time
-  #Then I expect that header "#stick .col:nth-of-type(1) .stat" matches the text "Av. response time"
+  Then I expect that header "#stick .col:nth-of-type(1) .stat" contains the text "Av. response time"
   And I expect that element "#average_response" does appear exactly "1" times
 
 Scenario: Has a box for Concurrent requests
-  #Then I expect that header "#stick .col:nth-of-type(2)" matches the text "Concurrent requests"
+  Then I expect that header "#stick .col:nth-of-type(2)" contains the text "Concurrent requests"
   And I expect that element "#network_reqs" does appear exactly "1" times
 
 Scenario: Has a box for hosts
-  #Then I expect that header "#stick .col:nth-of-type(3)" matches the text "Hosts"
+  Then I expect that header "#stick .col:nth-of-type(3)" contains the text "Hosts"
   And I expect that element "#network_hosts" does appear exactly "1" times
 
-Scenario: Testnet section has a 'View all updates' link
+Scenario: Testnet section has a 'About the network →' link
   Then I expect that element "#stick > div:nth-child(1) > a" matches the text "About the network →"
-  #And I expect the url to contain "http://beta2.dadi.cloud/en/network"
+  When I click on the element "#stick > div:nth-child(1) > a"
+  And I pause for 750ms
+  Then I expect that the path is "/en/network/"
