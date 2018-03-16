@@ -2,7 +2,6 @@ Feature: Web Services section
 
   As a user on the DADI.cloud home page they are able to view and interact with the Web Services section
 
-
 Scenario: The Web Services section is labelled correctly
   Given I open the url "http://beta2.dadi.cloud/en"
   When I scroll to element "#homeMain > div.cnt .hdr"
@@ -19,7 +18,7 @@ Scenario: Each box has a description text
 
 Scenario: Each box has an image icon displayed
   Then there should be 11 image icons displayed
-
+@ignore
 Scenario: Each of the current core product boxes has a 'Learn more' link
   Then there should be 5 "Learn more" links in the core products boxes
 

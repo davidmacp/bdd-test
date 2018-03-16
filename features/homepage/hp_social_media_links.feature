@@ -17,5 +17,5 @@ Scenario Outline: Check social media icon links open the correct page in a new w
   | Medium   | https://medium.com/@daditech |
   | Twitter  | https://twitter.com/dadi |
   | Reddit   | https://www.reddit.com/r/DADI/ |
-  | Discord  | https://discordapp.com/invite/3sEvuYJ |
   | Telegram | https://t.me/dadichat |
+#  | Discord  | https://discordapp.com/invite/3sEvuYJ |

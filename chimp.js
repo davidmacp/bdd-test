@@ -4,7 +4,7 @@ module.exports = {
   format: 'pretty',
   tags: '~@ignore',
   recommendedFilenameSeparator: '_',
-  screenshotsOnError: false,
+  screenshotsOnError: true,
   screenshotsPath: '.screenshots/',
   captureAllStepScreenshots: false,
   saveScreenshotsToDisk: true,
