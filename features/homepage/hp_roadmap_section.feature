@@ -5,9 +5,9 @@ Feature: Roadmap section
 Scenario: Roadmap Update section labelled
   Given I open the url "http://beta2.dadi.cloud/en"
   When the user scrolls to the Roadmap Updates section
-  Then the title "ROADMAP UPDATES" should be displayed
+  #Then the title "ROADMAP UPDATES" should be displayed
   Then I expect that header "#stickContainer .col:nth-of-type(1) .hdr" matches the text "ROADMAP UPDATES"
-  Then the element "//span[text()='Roadmap updates']" is visible
+  #Then the element "//span[text()='Roadmap updates']" is visible
 
 Scenario: 6 articles showing
   Then there should be 6 Roadmap update articles visible

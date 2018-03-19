@@ -27,7 +27,7 @@ const waitFor = require('../support/action/waitFor')
 const waitForVisible = require('../support/action/waitForVisible')
 const checkIfElementExists = require('../support/lib/checkIfElementExists')
 
-module.exports = function () {
+module.exports = function() {
   this.Then(
     /^I expect that the title is( not)* "([^"]*)?"$/,
     checkTitle
@@ -159,8 +159,7 @@ module.exports = function () {
   )
 
   this.Then(
-    /^I wait on element "([^"]*)?"(?: for (\d+)ms)*(?: to( not)* (be checked|be enabled|be selected|be visible|contain a text|contain a value|exist))*$/,
-    {
+    /^I wait on element "([^"]*)?"(?: for (\d+)ms)*(?: to( not)* (be checked|be enabled|be selected|be visible|contain a text|contain a value|exist))*$/, {
       wrapperOptions: {
         retry: 3
       }
