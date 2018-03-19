@@ -1,6 +1,6 @@
 const checkElementCount = require('../../support/check/checkElementCount')
 
-module.exports = function () {
+module.exports = function() {
   this.Then(/^there should be 4 Latest Knowledge articles visible$/, () => {
     checkElementCount('#homeMain > div.cnt > div.grid article', 4)
   })
