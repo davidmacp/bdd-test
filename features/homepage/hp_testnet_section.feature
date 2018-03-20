@@ -1,4 +1,4 @@
-Feature: Testnet section
+Feature: Home Page - Testnet section
 
   As a user on the DADI.cloud home page they are able to view and interact with The Testnet section
 

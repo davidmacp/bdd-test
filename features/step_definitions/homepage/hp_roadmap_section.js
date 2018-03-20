@@ -1,5 +1,4 @@
 const expect = require('chai').expect
-const checkElementCount = require('../../support/check/checkElementCount')
 
 module.exports = function() {
   this.When(/^the user scrolls to the Roadmap Updates section$/, () => {
@@ -13,39 +12,64 @@ module.exports = function() {
   })
 
   this.Then(/^there should be 6 Roadmap update articles visible$/, () => {
-    checkElementCount('div.grid:nth-of-type(1) article', 6)
+    const articleBoxes = browser.elements('div.grid:nth-of-type(1) article')
+
+    expect(articleBoxes.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 primary Roadmap badges$/, () => {
-    checkElementCount('#stickContainer div.badge__primary.bg-blue.color-white', 6)
+    const primaryBadges = browser.elements('#stickContainer div.badge__primary.bg-blue.color-white')
+
+    expect(primaryBadges.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 clickable primary Roadmap badges to the Roadmap page$/, () => {
-    checkElementCount('#stickContainer div.badge__primary.bg-blue.color-white > a[href="/en/roadmap"]', 6)
+    const primaryLinks = browser.elements('#stickContainer div.badge__primary.bg-blue.color-white > a[href="/en/roadmap"]')
+    // Is there a way of asserting that all href's are a[href="/en/roadmap"]
+
+    expect(primaryLinks.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 secondary badges$/, () => {
-    checkElementCount('#stickContainer div.badge__secondary > a', 6)
+    const secondaryBadges = browser.elements('#stickContainer div.badge__secondary > a')
+    // console.log(secondaryBadges.getText())
+
+    expect(secondaryBadges.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 clickable article titles$/, () => {
-    checkElementCount('#stickContainer article > div.box__inner > h2 > a', 6)
+    const articleTitles = browser.elements('#stickContainer article > div.box__inner > h2 > a')
+    // console.log(articleTitles.getText())
+
+    expect(articleTitles.value.length).to.equal(6)
   })
 
   this.Then(/^6 article descriptions$/, () => {
-    checkElementCount('#stickContainer > div:nth-child(1) > div.grid > div:nth-child(n) > article > div.box__inner > div.mb > p:first-of-type', 6)
+    const articleDescription = browser.elements('#stickContainer > div:nth-child(1) > div.grid > div:nth-child(n) > article > div.box__inner > div.mb > p:first-of-type')
+    // console.log(articleDescription.getText())
+
+    expect(articleDescription.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 valid dates$/, () => {
-    checkElementCount('#stickContainer > div:nth-child(1) > div.grid > div:nth-child(n) > article > div.box__footer.bdt.bd-grey.small > time', 6)
+    const articleDate = browser.elements('#stickContainer > div:nth-child(1) > div.grid > div:nth-child(n) > article > div.box__footer.bdt.bd-grey.small > time')
+    // console.log(articleDate.getText())
+
+    expect(articleDate.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 team member names$/, () => {
-    checkElementCount('#stickContainer > div:nth-child(1) > div.grid > div:nth-child(n) > article > div.box__footer.bdt.bd-grey.small > a', 6)
+    const teamMember = browser.elements('#stickContainer > div:nth-child(1) > div.grid > div:nth-child(n) > article > div.box__footer.bdt.bd-grey.small > a')
+    // console.log(teamMember.getText())
+
+    expect(teamMember.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 team member images$/, () => {
-    checkElementCount('#stickContainer > div:nth-child(1) > div.grid > div:nth-child(n) > article > div.box__footer.bdt.bd-grey.small > a > img', 6)
+    const memberImage = browser.elements('#stickContainer > div:nth-child(1) > div.grid > div:nth-child(n) > article > div.box__footer.bdt.bd-grey.small > a > img')
+    // console.log(memberImage.getText())
+
+    expect(memberImage.value.length).to.equal(6)
   })
 
   this.Then(/^there should be a "([^"]*)" link$/, (updateTitle) => {

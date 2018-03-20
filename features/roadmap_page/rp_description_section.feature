@@ -1,4 +1,4 @@
-Feature: Roadmap page description check
+Feature: Roadmap Page - description check
 
   As a user on the DADI.cloud Roadmap page they should be able to view the page description
 
