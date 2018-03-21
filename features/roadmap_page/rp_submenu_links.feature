@@ -1,4 +1,4 @@
-Feature: Roadmap Page - sub menu links check
+Feature: Roadmap Page - Sub menu links check
 
   As a user on the DADI.cloud Roadmap page they should be able to view the links for the page's sub menu
 

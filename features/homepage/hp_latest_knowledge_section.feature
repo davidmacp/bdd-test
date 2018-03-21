@@ -2,9 +2,11 @@ Feature: Home Page - Latest Knowledge section
 
   As a user on the DADI.cloud home page they are able to view and interact with the Latest Knowledge section
 
-Scenario: The Latest Knowledge section is labelled correctly
+Background:
   Given I open the url "http://beta2.dadi.cloud/en"
   When I scroll to element "#homeMain > div.cnt > div:nth-child(3) > h3 > span"
+
+Scenario: The Latest Knowledge section is labelled correctly
   Then I expect that header "#homeMain > div.cnt > div:nth-child(3) > h3 > span" matches the text "LATEST KNOWLEDGE ARTICLES"
 
 Scenario: 4 articles showing

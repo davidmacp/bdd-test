@@ -2,8 +2,10 @@ Feature: Roadmap - Website Page
 
   As a user on the DADI.cloud Roadmap Website page they are able to view and interact with the Website section
 
-Scenario: The Website section is labelled correctly
+Background:
   Given I open the url "http://beta2.dadi.cloud/en/roadmap/website"
+
+Scenario: The Website section is labelled correctly
   Then I expect that element "body > header > div > h1" contains the text "Website"
   And I expect that element "body > header > nav > div > ul > li:nth-child(6) > a" has the class "active"
 

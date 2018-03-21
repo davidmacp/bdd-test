@@ -1,10 +1,10 @@
-Feature: Roadmap Page - Header links check
+Feature: Knowledge Page - Header links check
 
-  As a user on the DADI.cloud Roadmap page they should be able to view the links for other screens in the header
+  As a user on the DADI.cloud Knowledge page they should be able to view the links for other screens in the header
 
 Scenario Outline: Check header links are present
-  Given I open the url "http://beta2.dadi.cloud/en/roadmap"
-  Then I expect that element "body > nav > div.cnt > ul > li:nth-child(1) > a" has the class "active"
+  Given I open the url "http://beta2.dadi.cloud/en/knowledge"
+  Then I expect that element "body > nav > div.cnt > ul > li:nth-child(4) > a" has the class "active"
   Then I expect that element "<element>" does exist
   And I expect that element "<element>" contains the text "<text>"
 

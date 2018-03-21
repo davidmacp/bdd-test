@@ -1,4 +1,4 @@
-Feature: Home Page - documentation link
+Feature: Home Page - Documentation link
 
   As a user on the DADI.cloud home page they should be able to click the documentation link in the header and be taken
   to the DADI.tech website

@@ -2,9 +2,11 @@ Feature: Home Page - Knowledge Categories section
 
   As a user on the DADI.cloud home page they are able to view and interact with the Knowledge Categories section
 
-Scenario: The Knowledge Categories section is labelled correctly
+Background:
   Given I open the url "http://beta2.dadi.cloud/en"
   When I scroll to element "#homeMain > div.cnt > div:nth-child(5) > h3 > span"
+
+Scenario: The Knowledge Categories section is labelled correctly
   Then I expect that header "#homeMain > div.cnt > div:nth-child(5) > h3 > span" matches the text "KNOWLEDGE CATEGORIES"
 
 Scenario: There are 5 Knowledge Category boxes

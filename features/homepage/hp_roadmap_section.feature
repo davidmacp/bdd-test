@@ -2,9 +2,11 @@ Feature: Home Page - Roadmap section
 
   As a user on the DADI.cloud home page they are able to view and interact with the Roadmaps section
 
-Scenario: Roadmap Update section labelled
+Background:
   Given I open the url "http://beta2.dadi.cloud/en"
-  When the user scrolls to the Roadmap Updates section
+  When I scroll to element "div.subnav"
+
+Scenario: Roadmap Update section labelled
   Then I expect that header "#stickContainer .col:nth-of-type(1) .hdr" matches the text "ROADMAP UPDATES"
 
 Scenario: 6 articles showing

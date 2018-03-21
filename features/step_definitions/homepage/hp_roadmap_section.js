@@ -1,10 +1,6 @@
 const expect = require('chai').expect
 
 module.exports = function() {
-  this.When(/^the user scrolls to the Roadmap Updates section$/, () => {
-    browser.scroll('div.subnav')
-  })
-
   this.Then(/^the title "([^"]*)" should be displayed$/, (title) => {
     let heading = browser.getText('div.hdr:first-of-type')
 

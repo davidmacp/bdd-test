@@ -2,9 +2,11 @@ Feature: Home Page - Testnet section
 
   As a user on the DADI.cloud home page they are able to view and interact with The Testnet section
 
-Scenario: The Testnet section is labelled correctly
+Background:
   Given I open the url "http://beta2.dadi.cloud/en"
   When I scroll to element "#stickContainer .col:nth-of-type(2) .hdr"
+
+Scenario: The Testnet section is labelled correctly
   Then I expect that header "#stickContainer .col:nth-of-type(2) .hdr" matches the text "THE TESTNET"
 
 Scenario: There is a world map displayed

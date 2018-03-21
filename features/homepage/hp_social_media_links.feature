@@ -1,4 +1,4 @@
-Feature: Home Page - social media links check
+Feature: Home Page - Social media links check
 
   As a user on the DADI.cloud home page they should be able to click the social media icon links in the header
   and be taken to the relevant website in a new window
