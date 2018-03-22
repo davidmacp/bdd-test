@@ -11,7 +11,7 @@ module.exports = function (name, falseCase) {
     return
   }
 
-    /**
+  /**
      * The cookie as retrieved from the this.browser
      * @type {Object}
      */
@@ -19,13 +19,13 @@ module.exports = function (name, falseCase) {
 
   if (falseCase) {
     expect(cookie).to.equal(
-            null,
-            `Expected cookie "${name}" not to exists but it does`
-        )
+      null,
+      `Expected cookie "${name}" not to exists but it does`
+    )
   } else {
     expect(cookie).to.not.equal(
-            null,
-            `Expected cookie "${name}" to exists but it does not`
-        )
+      null,
+      `Expected cookie "${name}" to exists but it does not`
+    )
   }
 }

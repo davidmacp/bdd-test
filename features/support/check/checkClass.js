@@ -12,7 +12,7 @@ module.exports = function (elem, falseCase, expectedClassName) {
     return
   }
 
-/**
+  /**
  * List of all the classes of the element
  * @type {Array}
  */
@@ -20,15 +20,15 @@ module.exports = function (elem, falseCase, expectedClassName) {
 
   if (falseCase === 'does not have') {
     expect(classesList).to.not
-            .include(
-                expectedClassName,
-                `Element ${elem} should not have the class ${expectedClassName}`
-            )
+      .include(
+        expectedClassName,
+        `Element ${elem} should not have the class ${expectedClassName}`
+      )
   } else {
     expect(classesList).to
-            .include(
-                expectedClassName,
-                `Element ${elem} should have the class ${expectedClassName}`
-            )
+      .include(
+        expectedClassName,
+        `Element ${elem} should have the class ${expectedClassName}`
+      )
   }
 }

@@ -1,6 +1,6 @@
 const expect = require('chai').expect
 
-module.exports = function() {
+module.exports = function () {
   this.Then(/^there should be 4 Upcoming Milestone boxes visible$/, () => {
     const wsBoxes = browser.elements('body > header > div > div.grid > div:nth-child(n)')
     // console.log(wsBoxes)

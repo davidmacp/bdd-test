@@ -38,10 +38,10 @@ module.exports = function (elem, ms, falseState, state) {
 
   if (falseState || state) {
     parsedState = state.indexOf(' ') > -1
-            ? state.split(/\s/)[state.split(/\s/).length - 1]
-            : state
+      ? state.split(/\s/)[state.split(/\s/).length - 1]
+      : state
 
-        // Check box checked state translates to selected state
+      // Check box checked state translates to selected state
     if (parsedState === 'checked') {
       parsedState = 'selected'
     }

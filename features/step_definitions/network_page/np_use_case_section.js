@@ -1,6 +1,6 @@
 const expect = require('chai').expect
 
-module.exports = function() {
+module.exports = function () {
   this.Then(/^there should be 11 Use case boxes visible$/, () => {
     const wsBoxes = browser.elements('body > main > div > div:nth-child(5) > div:nth-child(n)')
     // console.log(wsBoxes)

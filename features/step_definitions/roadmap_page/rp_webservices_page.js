@@ -1,6 +1,6 @@
 const expect = require('chai').expect
 
-module.exports = function() {
+module.exports = function () {
   this.Then(/^I expect that there is more than 1 article box visible on the web services page$/, () => {
     const primaryLinks = browser.elements('body > main > div > div.grid > div:nth-child(n) > article')
     // console.log(primaryLinks)

@@ -19,7 +19,7 @@ module.exports = function (selectionType, selectionValue, selectElem) {
     selectionValue
   ]
 
-    /**
+  /**
      * The method to use for selecting the option
      * @type {String}
      */
@@ -29,8 +29,8 @@ module.exports = function (selectionType, selectionValue, selectElem) {
     case 'name': {
       command = 'selectByAttribute'
 
-            // The selectByAttribute command expects the attribute name as it
-            // second argument so let's add it
+      // The selectByAttribute command expects the attribute name as it
+      // second argument so let's add it
       commandArguments.splice(1, 0, 'name')
 
       break

@@ -1,6 +1,6 @@
 const expect = require('chai').expect
 
-module.exports = function() {
+module.exports = function () {
   this.Then(/^there should be 6 update articles visible$/, () => {
     const articleBoxes = browser.elements('body > main > div > div.grid > div:nth-child(n) > article')
 

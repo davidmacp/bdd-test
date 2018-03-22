@@ -1,6 +1,6 @@
 const expect = require('chai').expect
 
-module.exports = function() {
+module.exports = function () {
   this.Then(/^there should be 5 Knowledge Category boxes displayed$/, () => {
     const wsBoxes = browser.elements('body > header > div > div > div:nth-child(n)')
     // console.log(wsBoxes)
@@ -31,28 +31,28 @@ module.exports = function() {
 
   this.Then(/^there should be an image icon for FAQ visible$/, () => {
     const memberImage = browser.elements('body > header > div > div > div:nth-child(2) > a > div.box__inner > h2 > img')
-    //console.log(memberImage.getText())
+    // console.log(memberImage.getText())
 
     expect(memberImage.value.length).to.equal(1)
   })
 
   this.Then(/^there should be an image icon for Network visible$/, () => {
     const memberImage = browser.elements('body > header > div > div > div:nth-child(3) > a > div.box__inner > h2 > img')
-    //console.log(memberImage.getText())
+    // console.log(memberImage.getText())
 
     expect(memberImage.value.length).to.equal(1)
   })
 
   this.Then(/^there should be an image icon for Security visible$/, () => {
     const memberImage = browser.elements('body > header > div > div > div:nth-child(4) > a > div.box__inner > h2 > img')
-    //console.log(memberImage.getText())
+    // console.log(memberImage.getText())
 
     expect(memberImage.value.length).to.equal(1)
   })
 
   this.Then(/^there should be an image icon for Tutorials visible$/, () => {
     const memberImage = browser.elements('body > header > div > div > div:nth-child(5) > a > div.box__inner > h2 > img')
-    //console.log(memberImage.getText())
+    // console.log(memberImage.getText())
 
     expect(memberImage.value.length).to.equal(1)
   })

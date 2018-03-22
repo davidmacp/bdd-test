@@ -15,25 +15,25 @@ module.exports = function (isCSS, attrName, elem, falseCase, expectedValue) {
     return
   }
 
-    /**
+  /**
      * The command to use for fetching the expected value
      * @type {String}
      */
   const command = isCSS ? 'getCssProperty' : 'getAttribute'
 
-    /**
+  /**
      * Te label to identify the attribute by
      * @type {String}
      */
   const attrType = (isCSS ? 'CSS attribute' : 'Attribute')
 
-    /**
+  /**
      * The actual attribute value
      * @type {Mixed}
      */
   let attributeValue = this.browser[command](elem, attrName)
 
-    /**
+  /**
      * when getting something with a color or font-weight WebdriverIO returns a
      * object but we want to assert against a string
      */
@@ -43,17 +43,17 @@ module.exports = function (isCSS, attrName, elem, falseCase, expectedValue) {
 
   if (falseCase) {
     expect(attributeValue).to.not
-            .equal(
-                expectedValue,
-                `${attrType} of element "${elem}" should not contain ` +
+      .equal(
+        expectedValue,
+        `${attrType} of element "${elem}" should not contain ` +
                 `"${attributeValue}"`
-            )
+      )
   } else {
     expect(attributeValue).to
-            .equal(
-                expectedValue,
-                `${attrType} of element "${elem}" should not contain ` +
+      .equal(
+        expectedValue,
+        `${attrType} of element "${elem}" should not contain ` +
                 `"${attributeValue}", but "${expectedValue}"`
-            )
+      )
   }
 }

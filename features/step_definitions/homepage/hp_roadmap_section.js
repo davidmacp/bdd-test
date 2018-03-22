@@ -1,6 +1,6 @@
 const expect = require('chai').expect
 
-module.exports = function() {
+module.exports = function () {
   this.Then(/^the title "([^"]*)" should be displayed$/, (title) => {
     let heading = browser.getText('div.hdr:first-of-type')
 

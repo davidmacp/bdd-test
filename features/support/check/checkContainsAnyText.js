@@ -12,26 +12,26 @@ module.exports = function (elementType, element, falseCase) {
     return
   }
 
-    /**
+  /**
      * The command to perform on the this.browser object
      * @type {String}
      */
   let command = 'getValue'
 
   if (
-        elementType === 'button' ||
+    elementType === 'button' ||
         this.browser.getAttribute(element, 'value') === null
-    ) {
+  ) {
     command = 'getText'
   }
 
-    /**
+  /**
      * False case
      * @type {Boolean}
      */
   let boolFalseCase
 
-    /**
+  /**
      * The text of the element
      * @type {String}
      */

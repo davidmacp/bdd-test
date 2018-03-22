@@ -11,7 +11,7 @@ module.exports = function (element, falseCase) {
     return
   }
 
-    /**
+  /**
      * The selected state
      * @type {Boolean}
      */
@@ -19,9 +19,9 @@ module.exports = function (element, falseCase) {
 
   if (falseCase) {
     expect(isSelected).to.not
-            .equal(true, `"${element}" should not be selected`)
+      .equal(true, `"${element}" should not be selected`)
   } else {
     expect(isSelected).to
-            .equal(true, `"${element}" should be selected`)
+      .equal(true, `"${element}" should be selected`)
   }
 }

@@ -8,7 +8,7 @@ const expect = require('chai').expect
  *                                  the given text or not
  * @param  {String}   expectedText  The text to check against
  */
-module.exports = function(elementType, element, falseCase, expectedText) {
+module.exports = function (elementType, element, falseCase, expectedText) {
   /**
    * The command to perform on the this.browser object
    * @type {String}

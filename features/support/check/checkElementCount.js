@@ -1,6 +1,6 @@
 const expect = require('chai').expect
 
-module.exports = function(selector, count) {
+module.exports = function (selector, count) {
   if (!this || !this.browser) {
     return
   }

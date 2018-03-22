@@ -1,6 +1,6 @@
 const expect = require('chai').expect
 
-module.exports = function() {
+module.exports = function () {
   this.Then(/^there should be 11 Web services boxes visible$/, () => {
     const wsBoxes = browser.elements('#homeMain > div.cnt > div.grid div.box')
     // console.log(wsBoxes)
@@ -33,7 +33,7 @@ module.exports = function() {
     expect(learnMore.value.length).to.equal(parseInt(count))
   })
 
-  this.Then(/^there should be (\d+) Latest updates links in the core products boxes$/, function(count) {
+  this.Then(/^there should be (\d+) Latest updates links in the core products boxes$/, function (count) {
     const latestUpdate = browser.elements('#homeMain > div.cnt > div.grid div.box div.box__footer a:nth-of-type(2)')
     expect(latestUpdate.value.length).to.equal(parseInt(count))
   })

@@ -11,7 +11,7 @@ module.exports = function (modalType, falseState) {
     return
   }
 
-    /**
+  /**
      * The text of the prompt
      * @type {String}
      */
@@ -22,18 +22,18 @@ module.exports = function (modalType, falseState) {
 
     if (falseState) {
       expect(promptText).to.not
-                .equal(
-                    null,
-                    `A ${modalType} was opened when it shouldn't`
-                )
+        .equal(
+          null,
+          `A ${modalType} was opened when it shouldn't`
+        )
     }
   } catch (e) {
     if (!falseState) {
       expect(promptText).to
-                .equal(
-                    null,
-                    `A ${modalType} was not opened when it should have been`
-                )
+        .equal(
+          null,
+          `A ${modalType} was not opened when it should have been`
+        )
     }
   }
 }

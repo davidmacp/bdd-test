@@ -11,7 +11,7 @@ module.exports = function (obsolete, falseCase) {
     return
   }
 
-    /**
+  /**
      * The handles of all open windows/tabs
      * @type {Object}
      */
@@ -19,9 +19,9 @@ module.exports = function (obsolete, falseCase) {
 
   if (falseCase) {
     expect(windowHandles.length).to
-            .equal(1, 'A new window should not have been opened')
+      .equal(1, 'A new window should not have been opened')
   } else {
     expect(windowHandles.length).to.not
-            .equal(1, 'A new window has been opened')
+      .equal(1, 'A new window has been opened')
   }
 }
