@@ -27,7 +27,7 @@ const waitFor = require('../support/action/waitFor')
 const waitForVisible = require('../support/action/waitForVisible')
 const checkIfElementExists = require('../support/lib/checkIfElementExists')
 
-module.exports = function() {
+module.exports = function () {
   this.Then(
     /^I expect that the title is( not)* "([^"]*)?"$/,
     checkTitle
