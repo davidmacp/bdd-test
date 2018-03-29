@@ -24,5 +24,5 @@ Scenario: Each box has a description text
 Scenario: Each of the boxes has a 'Learn more' link
   Then there should be 11 "Learn more" links visible
 
-Scenario: Use case section has a 'Read all usecases →' link
-  Then there should be a "Read all usecases →" link available
+Scenario: Use case section has a 'Read all use cases →' link
+  Then there should be a "Read all use cases →" link available

@@ -17,11 +17,11 @@ Scenario: Check there is a Smart contracts box with icon, title and description
 Scenario: Check there is a Fog computing box with icon, title and description
   Then I expect that element "body > main > div > div:nth-child(2) > div:nth-child(2) > img" is visible
   And I expect that element "body > main > div > div:nth-child(2) > div:nth-child(2) > h2" matches the text "Fog computing"
-  And I expect that element "body > main > div > div:nth-child(2) > div:nth-child(2) > p" matches the text "Ethereum Smart Contracts as a consensus system, ensures transparency and security for network participants."
+  And I expect that element "body > main > div > div:nth-child(2) > div:nth-child(2) > p" matches the text "A decentralized and more efficient computing model compared to traditional cloud platforms."
 
-Scenario: Check there is a Smart contracts box with icon, title and description
+Scenario: Check there is a Protocol buffers box with icon, title and description
   Then I expect that element "body > main > div > div:nth-child(2) > div:nth-child(3) > img" is visible
-  And I expect that element "body > main > div > div:nth-child(2) > div:nth-child(3) > h2" matches the text "Protocol Buffers"
+  And I expect that element "body > main > div > div:nth-child(2) > div:nth-child(3) > h2" matches the text "Protocol buffers"
   And I expect that element "body > main > div > div:nth-child(2) > div:nth-child(3) > p" matches the text "Fast data serialisation method used to optimise the network."
 
 Scenario: Check there is a Docker box with icon, title and description
@@ -34,7 +34,7 @@ Scenario: Check there is a GRPC box with icon, title and description
   And I expect that element "body > main > div > div:nth-child(3) > div:nth-child(2) > h2" matches the text "GRPC"
   And I expect that element "body > main > div > div:nth-child(3) > div:nth-child(2) > p" matches the text "A technology for distributing procedures across multiple hosts."
 
-Scenario: Check there is a Zookeeper box with icon, title and description
+Scenario: Check there is a ZooKeeper box with icon, title and description
   Then I expect that element "body > main > div > div:nth-child(3) > div:nth-child(3) > img" is visible
-  And I expect that element "body > main > div > div:nth-child(3) > div:nth-child(3) > h2" matches the text "Zookeeper"
+  And I expect that element "body > main > div > div:nth-child(3) > div:nth-child(3) > h2" matches the text "ZooKeeper"
   And I expect that element "body > main > div > div:nth-child(3) > div:nth-child(3) > p" matches the text "A peer-to-peer technology for node communication and distributed synchronization."
