@@ -41,28 +41,28 @@ module.exports = function () {
   })
 
   this.Then(/^6 article descriptions$/, () => {
-    const articleDescription = browser.elements('#stickContainer > div:nth-child(1) > div.grid > div:nth-child(n) > article > div.box__inner > div.mb > p:first-of-type')
+    const articleDescription = browser.elements('#stickContainer > div:nth-child(1) > div.grid > article:nth-child(n) > div.box__inner > h2 > a')
     // console.log(articleDescription.getText())
 
     expect(articleDescription.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 valid dates$/, () => {
-    const articleDate = browser.elements('#stickContainer > div:nth-child(1) > div.grid > div:nth-child(n) > article > div.box__footer.bdt.bd-grey.small > time')
+    const articleDate = browser.elements('#stickContainer > div:nth-child(1) > div.grid > article:nth-child(n) > div.box__footer > time')
     // console.log(articleDate.getText())
 
     expect(articleDate.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 team member names$/, () => {
-    const teamMember = browser.elements('#stickContainer > div:nth-child(1) > div.grid > div:nth-child(n) > article > div.box__footer.bdt.bd-grey.small > a')
+    const teamMember = browser.elements('#stickContainer > div:nth-child(1) > div.grid > article:nth-child(n) > div.box__footer > a')
     // console.log(teamMember.getText())
 
     expect(teamMember.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 team member images$/, () => {
-    const memberImage = browser.elements('#stickContainer > div:nth-child(1) > div.grid > div:nth-child(n) > article > div.box__footer.bdt.bd-grey.small > a > img')
+    const memberImage = browser.elements('#stickContainer > div:nth-child(1) > div.grid > article:nth-child(n) > div.box__footer > a > img')
     // console.log(memberImage.getText())
 
     expect(memberImage.value.length).to.equal(6)

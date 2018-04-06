@@ -2,49 +2,49 @@ const expect = require('chai').expect
 
 module.exports = function () {
   this.Then(/^there should be 12 Latest Article boxes displayed$/, () => {
-    const wsBoxes = browser.elements('body > main > div > div.grid > div:nth-child(n) > article')
+    const wsBoxes = browser.elements('body > main > div > div.grid > article:nth-child(n) > div.box__inner')
     // console.log(wsBoxes)
 
     expect(wsBoxes.value.length).to.equal(12)
   })
 
   this.Then(/^there should be 12 Latest Article badges visible$/, () => {
-    const learnMore = browser.elements('body > main > div > div.grid > div:nth-child(n) > article > div.box__inner > div.badge')
+    const learnMore = browser.elements('body > main > div > div.grid > article:nth-child(n) > div.box__inner > div.badge')
     // console.log(learnMore.getText())
 
     expect(learnMore.value.length).to.equal(12)
   })
 
   this.Then(/^there should be 12 Latest Article titles visible in the boxes$/, () => {
-    const learnMore = browser.elements('body > main > div > div.grid > div:nth-child(n) > article > div.box__inner > h2 > a')
+    const learnMore = browser.elements('body > main > div > div.grid > article:nth-child(n) > div.box__inner > h2 > a')
     // console.log(learnMore)
 
     expect(learnMore.value.length).to.equal(12)
   })
 
   this.Then(/^there should be 12 Latest Article box descriptions displayed$/, () => {
-    const boxDescription = browser.elements('body > main > div > div.grid > div:nth-child(n) > article > div.box__inner > div.mb > p:first-of-type')
+    const boxDescription = browser.elements('body > main > div > div.grid > article:nth-child(n) > div.box__inner > div.mb > p')
     // console.log(boxDescription)
 
     expect(boxDescription.value.length).to.equal(12)
   })
 
   this.Then(/^there should be 12 valid dates in the footer$/, () => {
-    const articleDate = browser.elements('body > main > div > div.grid > div:nth-child(n) > article > div.box__footer > time')
+    const articleDate = browser.elements('body > main > div > div.grid > article:nth-child(n) > div.box__footer > time')
     // console.log(articleDate)
 
     expect(articleDate.value.length).to.equal(12)
   })
 
   this.Then(/^there should be 12 team member names in the footer$/, () => {
-    const teamMember = browser.elements('body > main > div > div.grid > div:nth-child(n) > article > div.box__footer > a')
+    const teamMember = browser.elements('body > main > div > div.grid > article:nth-child(n) > div.box__footer > a')
     // console.log(teamMember)
 
     expect(teamMember.value.length).to.equal(12)
   })
 
   this.Then(/^there should be 12 team member images in the footer$/, () => {
-    const memberImage = browser.elements('body > main > div > div.grid > div:nth-child(n) > article > div.box__footer > a > img')
+    const memberImage = browser.elements('body > main > div > div.grid > article:nth-child(n) > div.box__footer > a > img')
     // console.log(memberImage)
 
     expect(memberImage.value.length).to.equal(12)

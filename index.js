@@ -16,11 +16,11 @@ var options = {
   launchReport: true,
   brandTitle: 'Acceptance Tests',
   metadata: {
-    'App Version': 'beta2',
+    'App Version': 'http://beta2.dadi.cloud',
     'Test Environment': 'TEST',
-    'Browser': 'Chrome  64.0.3282.186',
-    'Platform': 'MAC OSX',
-    'Parallel': 'Scenarios',
+    'Browser': 'Chrome  65.0.3325.181',
+    'Platform': 'MAC OSX High Sierra v10.13.3',
+    'Time': new Date(),
     'Executed': 'Remote'
   }
 }
