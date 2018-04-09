@@ -2,7 +2,7 @@ const expect = require('chai').expect
 
 module.exports = function () {
   this.Then(/^there should be 11 Web services boxes visible$/, () => {
-    const wsBoxes = browser.elements('#homeMain > div.cnt > div.grid div.box')
+    const wsBoxes = browser.elements('#homeMain > div.cnt > div:nth-child(2) > div:nth-child(n)')
     // console.log(wsBoxes)
     expect(wsBoxes.value.length).to.equal(11)
   })

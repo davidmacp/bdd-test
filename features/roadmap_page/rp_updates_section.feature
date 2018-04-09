@@ -29,6 +29,6 @@ Scenario: Each article has a footer that contains a date, a team member name and
   Then there should be 6 valid dates visible
   And there should be 6 team member names visible
   And there should be 6 team member images visible
- 
+
 Scenario: Roadmap section has a 'Next →' link - Roadmap Page
   Then there should be a "Next →" link visible

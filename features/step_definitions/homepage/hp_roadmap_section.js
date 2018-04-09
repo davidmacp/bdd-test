@@ -34,35 +34,35 @@ module.exports = function () {
   })
 
   this.Then(/^there should be 6 clickable article titles$/, () => {
-    const articleTitles = browser.elements('#stickContainer article > div.box__inner > h2 > a')
+    const articleTitles = browser.elements('#stickContainer > div:nth-child(1) > div.cols.cols--2 > article:nth-child(n) > div.box__inner > a > h2')
     // console.log(articleTitles.getText())
 
     expect(articleTitles.value.length).to.equal(6)
   })
 
   this.Then(/^6 article descriptions$/, () => {
-    const articleDescription = browser.elements('#stickContainer > div:nth-child(1) > div.grid > article:nth-child(n) > div.box__inner > h2 > a')
+    const articleDescription = browser.elements('#stickContainer > div:nth-child(1) > div.cols.cols--2 > article:nth-child(n) > div.box__inner > a > p:first-of-type')
     // console.log(articleDescription.getText())
 
     expect(articleDescription.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 valid dates$/, () => {
-    const articleDate = browser.elements('#stickContainer > div:nth-child(1) > div.grid > article:nth-child(n) > div.box__footer > time')
+    const articleDate = browser.elements('#stickContainer > div:nth-child(1) > div.cols.cols--2 > article:nth-child(n) > div.box__footer > time')
     // console.log(articleDate.getText())
 
     expect(articleDate.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 team member names$/, () => {
-    const teamMember = browser.elements('#stickContainer > div:nth-child(1) > div.grid > article:nth-child(n) > div.box__footer > a')
+    const teamMember = browser.elements('#stickContainer > div:nth-child(1) > div.cols.cols--2 > article:nth-child(n) > div.box__footer > a')
     // console.log(teamMember.getText())
 
     expect(teamMember.value.length).to.equal(6)
   })
 
   this.Then(/^there should be 6 team member images$/, () => {
-    const memberImage = browser.elements('#stickContainer > div:nth-child(1) > div.grid > article:nth-child(n) > div.box__footer > a > img')
+    const memberImage = browser.elements('#stickContainer > div:nth-child(1) > div.cols.cols--2 > article:nth-child(n) > div.box__footer > a > img')
     // console.log(memberImage.getText())
 
     expect(memberImage.value.length).to.equal(6)
