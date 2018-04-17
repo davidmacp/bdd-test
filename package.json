@@ -4,7 +4,7 @@
   "description": "Sample Chimp Tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node node_modules/webdriverio/bin/wdio ./test/config/suite.cucumber.conf.js"
   },
   "repository": {
     "type": "git",
@@ -16,11 +16,33 @@
     "url": "https://github.com/davidmacp/bdd-test/issues"
   },
   "devDependencies": {
-    "chimp": "^0.51.0",
-    "cucumber-html-reporter": "^4.0.2"
+    "cucumber-html-reporter": "^4.0.2",
+    "wdio-allure-reporter": "^0.6.0",
+    "wdio-cucumber-framework": "1.1.1",
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-json-reporter": "^0.3.1",
+    "wdio-junit-reporter": "^0.4.2",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.4",
+    "webdriverio": "^4.12.0"
   },
   "homepage": "https://github.com/davidmacp/bdd-test#readme",
   "dependencies": {
+    "allure-commandline": "^2.5.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
     "chai": "4.1.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
   }
 }

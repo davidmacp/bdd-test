@@ -1,0 +1,74 @@
+[
+  {
+    "description": "  As a user on the DADI.cloud home page they should be able to click the documentation link in the header and be taken\n  to the DADI.tech website",
+    "elements": [
+      {
+        "id": "home-page-documentation-link;check-documentation-link-works",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Check documentation link works",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I am on the DADI.cloud homepage",
+            "result": {
+              "status": "passed",
+              "duration": 347815
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/james/code/bdd-test/features/step_definitions/given.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the link \"Documentation\"",
+            "result": {
+              "status": "failed",
+              "duration": 29921099,
+              "error_message": "Error: An element could not be located on the page using the given search parameters.\n    at World.module.exports (features/support/action/clickElement.js:28:3)\n    at /usr/local/lib/node_modules/chimp/node_modules/meteor-promise/fiber_pool.js:43:40\n    at new RuntimeError (/usr/local/lib/node_modules/chimp/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:144:12)\n    at Object.<anonymous> (/usr/local/lib/node_modules/chimp/node_modules/webdriverio/build/lib/commands/click.js:17:19)\n    at Object.exec (/usr/local/lib/node_modules/chimp/node_modules/webdriverio/build/lib/helpers/safeExecute.js:28:24)\n    at Object.resolve (/usr/local/lib/node_modules/chimp/node_modules/webdriverio/build/lib/webdriverio.js:191:29)\n    at /usr/local/lib/node_modules/chimp/node_modules/webdriverio/build/lib/webdriverio.js:540:32\n    at _fulfilled (/usr/local/lib/node_modules/chimp/node_modules/q/q.js:854:54)\n    at self.promiseDispatch.done (/usr/local/lib/node_modules/chimp/node_modules/q/q.js:883:30)\n    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/chimp/node_modules/q/q.js:816:13)\n    at /usr/local/lib/node_modules/chimp/node_modules/q/q.js:624:44\n    at runSingle (/usr/local/lib/node_modules/chimp/node_modules/q/q.js:137:13)\n    at flush (/usr/local/lib/node_modules/chimp/node_modules/q/q.js:125:13)\n    at _combinedTickCallback (internal/process/next_tick.js:73:7)\n    at process._tickDomainCallback (internal/process/next_tick.js:128:9)"
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/james/code/bdd-test/features/step_definitions/when.js:32"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I expect the url \"https://docs.dadi.tech\" is opened in a new window",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "match": {
+              "location": "/Users/james/code/bdd-test/features/step_definitions/then.js:151"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 148850
+            },
+            "hidden": true,
+            "match": {
+              "location": "/usr/local/lib/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "home-page-documentation-link",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Home page documentation link",
+    "tags": [],
+    "uri": "/Users/james/code/bdd-test/features/homepage/hp_header_documentation_link.feature"
+  }
+]
