@@ -3,7 +3,7 @@ Feature: Testnet section
   As a user on the DADI.cloud home page they are able to view and interact with The Testnet section
 
 Scenario: The Testnet section is labelled correctly
-  Given I open the url "http://beta2.dadi.cloud/en"
+  Given I open the url "/"
   When I scroll to element "#stickContainer .col:nth-of-type(2) .hdr"
   Then I expect that header "#stickContainer .col:nth-of-type(2) .hdr" matches the text "THE TESTNET"
 

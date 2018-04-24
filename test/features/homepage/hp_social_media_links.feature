@@ -4,7 +4,7 @@ Feature: Home page social media links check
   and be taken to the relevant website in a new window
 
 Background:
-  Given I open the url "http://beta2.dadi.cloud/en"
+  Given I open the url "/"
 
 Scenario Outline: Check social media icon links open the correct page in a new window
   When I click on the link "<link>"
@@ -14,8 +14,8 @@ Scenario Outline: Check social media icon links open the correct page in a new w
   Examples:
   | link     | url         |
   | Github   | https://github.com/dadi |
-  | Medium   | https://medium.com/@daditech |
+  | Medium   | https://medium.com/dadi |
   | Twitter  | https://twitter.com/dadi |
   | Reddit   | https://www.reddit.com/r/DADI/ |
   | Telegram | https://t.me/dadichat |
-#  | Discord  | https://discordapp.com/invite/3sEvuYJ |
+  | Discord  | https://discordapp.com/invite/3sEvuYJ |

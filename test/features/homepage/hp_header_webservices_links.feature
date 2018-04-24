@@ -4,9 +4,9 @@ Feature: Home page web services links
   and be shown a new sub menu with links to the 5 product web pages
 
 Background:
-  Given I open the url "http://beta2.dadi.cloud/en"
+  Given I open the url "/"
 
-@ignore
+
 Scenario: Check web services links appear
   When the user clicks on the web services header link
   Then the sub menu is displayed

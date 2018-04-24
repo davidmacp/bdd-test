@@ -3,8 +3,8 @@ const defaultTimeoutInterval = process.env.DEBUG ? (60 * 60 * 500) : 90000
 exports.config = {
 
   specs: [
-    // './test/features/**/*.feature'
-    './test/features/**/hp_latest_knowledge_section.feature'
+    './test/features/**/*.feature'
+    // './test/features/**/np_use_case_section.feature'
   ],
   // Patterns to exclude.
   exclude: [
@@ -118,9 +118,9 @@ exports.config = {
   //
   // Set a base URL in order to shorten url command calls. If your url parameter starts
   // with "/", then the base url gets prepended.
-  baseUrl: 'http://localhost:8080',
-  waitforTimeout: 90000, // Default timeout for all waitFor* commands.
-  connectionRetryTimeout: 90000, // Default timeout in milliseconds for request  if Selenium Grid doesn't send response
+  baseUrl: 'http://localhost:3000',
+  waitforTimeout: 30000, // Default timeout for all waitFor* commands.
+  connectionRetryTimeout: 30000, // Default timeout in milliseconds for request  if Selenium Grid doesn't send response
   connectionRetryCount: 3, // Default request retries count
 
   // Services take over a specific job you don't want to take care of. They enhance
@@ -144,7 +144,7 @@ exports.config = {
 
   // If you are using Cucumber you need to specify the location of your step definitions.
   cucumberOpts: {
-    require: ['./test/stepDefinitions/homepage/hp_latest_knowledge_section', './test/stepDefinitions/given.js', './test/stepDefinitions/when.js', './test/stepDefinitions/then.js'], // <string[]> (file/dir) require files before executing features
+    require: ['./test/stepDefinitions/**/*.js', './test/stepDefinitions/given.js', './test/stepDefinitions/when.js', './test/stepDefinitions/then.js'], // <string[]> (file/dir) require files before executing features
     backtrace: true, // <boolean> show full backtrace for errors
     // compiler: ['js:babel-core/register'], // <string[]> filetype:compiler used for processing required features
     failAmbiguousDefinitions: true, // <boolean< Treat ambiguous definitions as errors
@@ -155,7 +155,6 @@ exports.config = {
     snippets: true, // <boolean> hide step definition snippets for pending steps
     format: ['pretty'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
     colors: true, // <boolean> disable colors in formatter output
-    snippets: false, // <boolean> hide step definition snippets for pending steps
     source: false, // <boolean> hide source uris
     profile: [], // <string[]> (name) specify the profile to use
     strict: true, // <boolean> fail if there are any undefined or pending steps

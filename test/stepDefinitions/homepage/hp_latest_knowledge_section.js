@@ -13,11 +13,11 @@ defineSupportCode(function ({ Then }) {
   })
 
   Then(/^there should be 4 clickable article titles$/, () => {
-    checkElementCount('#homeMain > div.cnt > div.cols article > div.box__inner > h2 > a', 4)
+    checkElementCount('#homeMain > div.cnt > div.cols article > div.box__inner > a > h2', 4)
   })
 
   Then(/^4 article descriptions$/, () => {
-    checkElementCount('#homeMain > div.cnt > div.cols article > div.box__inner > div.mb > p:first-of-type', 4)
+    checkElementCount('#homeMain > div.cnt > div.cols article > div.box__inner > a > p:first-of-type', 4)
   })
 
   Then(/^there should be 4 valid dates$/, () => {

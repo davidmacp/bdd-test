@@ -3,7 +3,7 @@ Feature: Roadmap section
   As a user on the DADI.cloud home page they are able to view and interact with the Roadmaps section
 
 Scenario: Roadmap Update section labelled
-  Given I open the url "http://beta2.dadi.cloud/en"
+  Given I open the url "/"
   When the user scrolls to the Roadmap Updates section
   #Then the title "ROADMAP UPDATES" should be displayed
   Then I expect that header "#stickContainer .col:nth-of-type(1) .hdr" matches the text "ROADMAP UPDATES"

@@ -4,7 +4,7 @@ Feature: Home page documentation link
   to the DADI.tech website
 
 Background:
-  Given I open the url "http://beta2.dadi.cloud/en"
+  Given I open the url "/"
 
 Scenario: Check documentation link works
   When I click on the link "Documentation"

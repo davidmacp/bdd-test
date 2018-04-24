@@ -1,4 +1,4 @@
-FROM dadi/headless
+FROM jimlambie/headless
 
 USER root
 

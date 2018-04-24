@@ -1,18 +1,24 @@
-const expect = require('chai').expect
+const checkElementCount = require('../../support/check/checkElementCount')
+const scroll = require('../../support/action/scroll')
 
-module.exports = function () {
-  this.When(/^the user clicks on the web services header link$/, () => {
+const defineSupportCode = require('cucumber').defineSupportCode
+
+// module.exports = {
+defineSupportCode(function ({ When }) {
+  When(/^the user clicks on the web services header link$/, () => {
     browser.click('a[href="#web-services"]')
   })
+})
 
-  this.Then(/^the sub menu is displayed$/, () => {
+defineSupportCode(function ({ Then }) {
+  Then(/^the sub menu is displayed$/, () => {
     const classes = browser.getAttribute('div#web-services', 'class')
     const classArray = classes.split(' ')
 
     expect(classArray).to.not.include('hide')
   })
 
-  this.Then(/^there should be a link for "([^"]*)"$/, linkText => {
+  Then(/^there should be a link for "([^"]*)"$/, linkText => {
     // get text value of all links within the submenu
 
     // [ 'Web', 'Publish', 'API', 'CDN', 'Queue' ]
@@ -24,4 +30,4 @@ module.exports = function () {
     // test that linkText exists in the submenu links
     expect(submenuItems).to.include(linkText)
   })
-}
+})

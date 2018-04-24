@@ -4,11 +4,12 @@ Feature: Home page header links check
   relevant screen
 
 Background:
-  Given I open the url "http://beta2.dadi.cloud/en"
+  Given I open the url "/"
   And I wait on element "footer" for 1500ms to be visible
 
 Scenario Outline: Check header links go to the correct page
-  When the user clicks on the "<pagename>" header link http://beta2.dadi.cloud/"<url>"
+  # When the user clicks on the "<pagename>" header link /"<url>"
+  When I click on the link "<pagename>"
   Then I expect that the title is "<title>"
 
   Examples:
