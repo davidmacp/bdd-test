@@ -19,5 +19,5 @@ Scenario Outline: Check header links go to the correct page
   | Network   | en/network   | Network \| DADI |
   | Knowledge | en/knowledge | Knowledge \| DADI |
   | Token     | en/token     | Token \| DADI |
-  | Partners  | en/partners  | Partners \| DADI |
+  # | Partners  | en/partners  | Partners \| DADI |
   | Team      | en/team      | The Team \| DADI |

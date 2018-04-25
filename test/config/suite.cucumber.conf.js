@@ -1,11 +1,60 @@
-const defaultTimeoutInterval = process.env.DEBUG ? (60 * 60 * 500) : 90000
+const defaultTimeoutInterval = process.env.DEBUG ? (60 * 60 * 500) : 30000
 
 exports.config = {
 
   specs: [
     './test/features/**/*.feature'
-    // './test/features/**/np_use_case_section.feature'
+    // './test/features/**/tp_token_stats_section.feature'
   ],
+  // Define specific suites
+  suites: {
+    homepage: [
+      './test/features/homepage/hp_header_documentation_link.feature',
+      './test/features/homepage/hp_header_links.feature',
+      './test/features/homepage/hp_header_webservices_links.feature',
+      './test/features/homepage/hp_knowledge_categories_section.feature',
+      './test/features/homepage/hp_latest_knowledge_section.feature',
+      './test/features/homepage/hp_roadmap_section.feature',
+      './test/features/homepage/hp_social_media_links.feature',
+      './test/features/homepage/hp_testnet_section.feature',
+      './test/features/homepage/hp_webservices_section.feature'
+    ],
+    knowledge_page: [
+      './test/features/knowledge_page/kp_header_links.feature',
+      './test/features/knowledge_page/kp_social_media_links.feature',
+      './test/features/knowledge_page/kp_knowledge_categories_section.feature',
+      './test/features/knowledge_page/hp_latest_articles_section.feature'
+    ],
+    network_page: [
+      './test/features/network_page/np_contribute_section.feature',
+      './test/features/network_page/np_description_section.feature',
+      './test/features/network_page/np_header_links.feature',
+      './test/features/network_page/np_header_sub_menu.feature',
+      './test/features/network_page/np_platform_arch_section.feature',
+      './test/features/network_page/np_roadmap_updates_section.feature',
+      './test/features/network_page/np_social_media_links.feature',
+      './test/features/network_page/np_testnet_status.feature',
+      './test/features/network_page/np_use_case_section.feature'
+    ],
+    roadmap_page: [
+      // ...
+    ],
+    team_page: [
+      './test/features/team_page/team_advisors_section.feature',
+      './test/features/team_page/team_core_team_section.feature',
+      './test/features/team_page/team_description_section.feature',
+      './test/features/team_page/team_header_links.feature',
+      './test/features/team_page/team_social_media_links.feature'
+    ],
+    token_page: [
+      './test/features/token_page/tp_description_section.feature',
+      './test/features/token_page/tp_exchange_partners_section.feature',
+      './test/features/token_page/tp_find_us_on_section.feature',
+      './test/features/token_page/tp_header_links.feature',
+      './test/features/token_page/tp_social_media_links.feature',
+      './test/features/token_page/tp_token_stats_section.feature'
+    ]
+  },
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -26,7 +75,7 @@ exports.config = {
   // and 30 processes will get spawned. The property handles how many capabilities
   // from the same test should run tests.
   //
-  maxInstances: 10,
+  maxInstances: 1,
 
   capabilities: [
 
@@ -34,7 +83,7 @@ exports.config = {
       browserName: 'chrome',
       // platform: 'Windows 10',
       // version: '50.0',
-      maxInstances: '5'
+      maxInstances: '1'
     }
     //
     // {
@@ -115,10 +164,13 @@ exports.config = {
   logLevel: 'error', // Level of logging verbosity: silent | verbose | command | data | result | error
   coloredLogs: true, // Enables colors for log output.
   screenshotPath: './test/reports/errorShots/', // Saves a screenshot to a given path if a command fails.
+  // take screenshot on reject
+  screenshotOnReject: false,
   //
   // Set a base URL in order to shorten url command calls. If your url parameter starts
   // with "/", then the base url gets prepended.
-  baseUrl: 'http://localhost:3000',
+  // baseUrl: 'http://localhost:3000',
+  baseUrl: 'http://beta2.dadi.cloud/en',
   waitforTimeout: 30000, // Default timeout for all waitFor* commands.
   connectionRetryTimeout: 30000, // Default timeout in milliseconds for request  if Selenium Grid doesn't send response
   connectionRetryCount: 3, // Default request retries count

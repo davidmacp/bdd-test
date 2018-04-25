@@ -16,14 +16,11 @@ Scenario: Has a box for average response time
 
 Scenario: Has a box for Concurrent requests
   Then I expect that header "#stick .col:nth-of-type(2)" contains the text "Concurrent requests"
-  And I expect that element "#network_reqs" does appear exactly "1" times
+  And I expect that element "#concurrent_requests" does appear exactly "1" times
 
 Scenario: Has a box for hosts
   Then I expect that header "#stick .col:nth-of-type(3)" contains the text "Hosts"
-  And I expect that element "#network_hosts" does appear exactly "1" times
+  And I expect that element "#host_count" does appear exactly "1" times
 
 Scenario: Testnet section has a 'About the network →' link
-  Then I expect that element "#stick > div:nth-child(1) > a" matches the text "About the network →"
-  When I click on the element "#stick > div:nth-child(1) > a"
-  And I pause for 750ms
-  Then I expect that the path is "/en/network/"
+  Then I expect there is an "About the network →" link
