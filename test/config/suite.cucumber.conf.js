@@ -4,7 +4,7 @@ exports.config = {
 
   specs: [
     './test/features/**/*.feature'
-    // './test/features/**/tp_token_stats_section.feature'
+    // './test/features/**/kp_header_links.feature'
   ],
   // Define specific suites
   suites: {
@@ -83,7 +83,10 @@ exports.config = {
       browserName: 'chrome',
       // platform: 'Windows 10',
       // version: '50.0',
-      maxInstances: '1'
+      maxInstances: '1',
+      chromeOptions: {
+        args: ['--headless', '--disable-gpu']
+      }
     }
     //
     // {
