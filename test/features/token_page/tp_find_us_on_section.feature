@@ -9,30 +9,23 @@ Background:
 Scenario: Check Find Us On title is correct
   Then I expect that element "body > main > div > div:nth-child(3) > h3 > span" matches the text "FIND US ON"
 
-Scenario: The link to CobinHood should open in a new tab
-  And I click on the link "CobinHood"
-  Then I expect the url "https://cobinhood.com/trade/DADI-BTC" is opened in a new tab
+Scenario: There should be a link to CobinHood
+  Then I expect that the attribute "href" from element "body > main > div > div.normal.read > p > a:nth-child(1)" is "https://cobinhood.com/trade/DADI-BTC"
 
-Scenario: The link to Coin Falcon should open in a new tab
-  And I click on the link "Coin Falcon"
-  Then I expect the url "https://coinfalcon.com/advanced-view/DADI-BTC" is opened in a new tab
+Scenario: There should be a link to Coin Falcon
+  Then I expect that the attribute "href" from element "body > main > div > div.normal.read > p > a:nth-child(2)" is "https://coinfalcon.com/advanced-view/DADI-BTC"
 
-Scenario: The link to Gate.io should open in a new tab
-  And I click on the link "Gate.io"
-  Then I expect the url "https://gate.io/trade/DADI_ETH" is opened in a new tab
+Scenario: There should be a link to Gate.io
+  Then I expect that the attribute "href" from element "body > main > div > div.normal.read > p > a:nth-child(3)" is "https://gate.io/trade/DADI_ETH"
 
-Scenario: The link to IDEX should open in a new tab
-  And I click on the link "IDEX"
-  Then I expect the url "https://idex.market/eth/dadi" is opened in a new tab
+Scenario: There should be a link to IDEX
+  Then I expect that the attribute "href" from element "body > main > div > div.normal.read > p > a:nth-child(4)" is "https://idex.market/eth/dadi"
 
-Scenario: The link to EthBits should open in a new tab
-  And I click on the link "EthBits"
-  Then I expect the url "https://www.ethbits.com/" is opened in a new tab
+Scenario: There should be a link to EthBits
+  Then I expect that the attribute "href" from element "body > main > div > div.normal.read > p > a:nth-child(5)" is "https://www.ethbits.com/"
 
-Scenario: The link to CoinMarketCap should open in a new tab
-  And I click on the link "CoinMarketCap"
-  Then I expect the url "https://coinmarketcap.com/currencies/dadi/" is opened in a new tab
+Scenario: There should be a link to CoinMarketCap
+  Then I expect that the attribute "href" from element "body > main > div > div.normal.read > p > a:nth-child(6)" is "https://coinmarketcap.com/currencies/dadi"
 
-Scenario: The link to CoinGecko should open in a new tab
-  And I click on the link "CoinGecko"
-  Then I expect the url "https://www.coingecko.com/en/price_charts/dadi/usd" is opened in a new tab
+Scenario: There should be a link to CoinGecko
+  Then I expect that the attribute "href" from element "body > main > div > div.normal.read > p > a:nth-child(7)" is "https://www.coingecko.com/en/price_charts/dadi/usd"

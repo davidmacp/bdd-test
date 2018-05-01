@@ -8,4 +8,5 @@ Background:
 
 Scenario: Check documentation link works
   When I click on the link "Documentation"
+  And I pause for 1500ms
   Then I expect the url "https://docs.dadi.tech" is opened in a new window

@@ -12,18 +12,14 @@ Scenario: Check Exchange Partners title is correct
 Scenario: There are 4 Partners boxes visible
   Then there should be 4 Partner boxes visible
 
-Scenario: The link to Okex should open in a new tab
-  And I click on the element "body > main > div > div.grid > div:nth-child(1) > a"
-  Then I expect the url "https://www.okex.com/" is opened in a new tab
+Scenario: There should be a link to Okex
+  Then I expect that the attribute "href" from element "body > main > div > div.grid > div:nth-child(1) > a " is "https://okex.com/"
 
-Scenario: The link to KuCoin should open in a new tab
-  And I click on the element "body > main > div > div.grid > div:nth-child(2) > a"
-  Then I expect the url "https://www.kucoin.com/" is opened in a new tab
+Scenario: There should be a link to KuCoin
+  Then I expect that the attribute "href" from element "body > main > div > div.grid > div:nth-child(2) > a " is "https://kucoin.com/"
 
-Scenario: The link to HitBTC should open in a new tab
-  And I click on the element "body > main > div > div.grid > div:nth-child(3) > a"
-  Then I expect the url "https://hitbtc.com/" is opened in a new tab
+Scenario: There should be a link to HitBTC
+  Then I expect that the attribute "href" from element "body > main > div > div.grid > div:nth-child(3) > a " is "https://hitbtc.com/"
 
-Scenario: The link to Bancor should open in a new tab
-  And I click on the element "body > main > div > div.grid > div:nth-child(4) > a"
-  Then I expect the url "https://www.bancor.network/discover" is opened in a new tab
+Scenario: There should be a link to Bancor
+  Then I expect that the attribute "href" from element "body > main > div > div.grid > div:nth-child(4) > a " is "https://www.bancor.network/"

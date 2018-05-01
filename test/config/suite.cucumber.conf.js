@@ -4,7 +4,7 @@ exports.config = {
 
   specs: [
     './test/features/**/*.feature'
-    // './test/features/**/kp_header_links.feature'
+    // './test/features/**/team_social_media_links.feature'
   ],
   // Define specific suites
   suites: {
@@ -23,7 +23,7 @@ exports.config = {
       './test/features/knowledge_page/kp_header_links.feature',
       './test/features/knowledge_page/kp_social_media_links.feature',
       './test/features/knowledge_page/kp_knowledge_categories_section.feature',
-      './test/features/knowledge_page/hp_latest_articles_section.feature'
+      './test/features/knowledge_page/kp_latest_articles_section.feature'
     ],
     network_page: [
       './test/features/network_page/np_contribute_section.feature',
@@ -75,7 +75,7 @@ exports.config = {
   // and 30 processes will get spawned. The property handles how many capabilities
   // from the same test should run tests.
   //
-  maxInstances: 1,
+  maxInstances: 5,
 
   capabilities: [
 
@@ -83,9 +83,9 @@ exports.config = {
       browserName: 'chrome',
       // platform: 'Windows 10',
       // version: '50.0',
-      maxInstances: '1',
+      maxInstances: '5',
       chromeOptions: {
-        args: ['--headless', '--disable-gpu']
+        args: ['--headless', '--disable-gpu', 'window-size=1920,1080']
       }
     }
     //
@@ -186,14 +186,15 @@ exports.config = {
   // services: ['selenium-standalone', 'phantomjs', 'appium'],
   //
   framework: 'cucumber',
-  reporters: ['spec', 'allure', 'json'],
+  // reporters: ['spec', 'allure', 'json'],
+  reporters: ['spec', 'allure'],
 
   reporterOptions: {
-    json: {outputDir: './test/reports/json-results/'},
+    // json: {outputDir: './test/reports/json-results/'},
     allure: {
       outputDir: './test/reports/allure-results/',
       disableWebdriverStepsReporting: false,
-      useCucumberStepReporter: false
+      useCucumberStepReporter: true
     }
   },
 

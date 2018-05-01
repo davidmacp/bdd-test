@@ -4,7 +4,7 @@ Feature: Knowledge Page - Social media links check
   in the header
 
 Scenario: Check social media links are present
-  Given I have a screen that is 1310 by 768 pixels
-  And I open the url "/knowledge"
+  # Given I have a screen that is 1310 by 768 pixels
+  Given I open the url "/knowledge"
   Then I expect that element "body > nav > div.cnt > ul > li.nav__social > a" does exist
   And there should be 6 Social Media icons visible

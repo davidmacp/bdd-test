@@ -5,11 +5,12 @@ Feature: Home page header links check
 
 Background:
   Given I open the url "/"
-  And I wait on element "footer" for 1500ms to be visible
+  # And I wait on element "footer" for 1500ms to be visible
 
 Scenario Outline: Check header links go to the correct page
   # When the user clicks on the "<pagename>" header link /"<url>"
   When I click on the link "<pagename>"
+  When I pause for 1500ms
   Then I expect that the title is "<title>"
 
   Examples:
