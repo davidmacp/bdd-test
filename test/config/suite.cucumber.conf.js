@@ -86,7 +86,7 @@ exports.config = {
   // and 30 processes will get spawned. The property handles how many capabilities
   // from the same test should run tests.
   //
-  maxInstances: 1,
+  maxInstances: 2,
 
   capabilities: [
 
@@ -94,9 +94,9 @@ exports.config = {
       browserName: 'chrome',
       // platform: 'Windows 10',
       // version: '50.0',
-      maxInstances: '1',
+      maxInstances: '2',
       chromeOptions: {
-        args: ['--headless', '--disable-gpu', 'window-size=1920,1080']
+        args: ['--headless', '--disable-gpu', 'window-size=1366,768']
       }
     }
     //

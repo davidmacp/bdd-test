@@ -1,4 +1,4 @@
-Feature: Web Services section
+Feature: Home Page - Web Services section
 
   As a user on the DADI.cloud home page they are able to view and interact with the Web Services section
 

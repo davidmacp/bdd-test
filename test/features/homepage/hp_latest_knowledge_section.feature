@@ -1,4 +1,4 @@
-Feature: Latest Knowledge section
+Feature: Home Page - Latest Knowledge section
 
   As a user on the DADI.cloud home page they are able to view and interact with the Latest Knowledge section
 

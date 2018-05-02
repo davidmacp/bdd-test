@@ -1,4 +1,4 @@
-Feature: Knowledge Categories section
+Feature: Home Page - Knowledge Categories section
 
   As a user on the DADI.cloud home page they are able to view and interact with the Knowledge Categories section
 

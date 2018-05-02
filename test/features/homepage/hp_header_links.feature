@@ -1,4 +1,4 @@
-Feature: Home page header links check
+Feature: Home Page - Header links check
 
   As a user on the DADI.cloud home page they should be able to click the links in the header and be taken to the
   relevant screen
