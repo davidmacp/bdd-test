@@ -2,7 +2,7 @@ Feature: Network Page - What can it be used for? section
 
   As a user on the DADI.cloud Network page they should be able to view the What can it be used for? section
 
-Background:
+Scenario: Scroll to 'What can it be used for? Section'
   Given I open the url "/network"
   When I scroll to element "#usecases > h3 > span"
 

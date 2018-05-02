@@ -2,7 +2,7 @@ Feature: Knowledge Page - Latest Articles section
 
   As a user on the DADI.cloud Knowledge page they are able to view and interact with the Latest Articles section
 
-Background:
+Scenario: Scroll to 'Latest Articles Section'
   Given I open the url "/knowledge"
   When I scroll to element "body > main > div > div.hdr > h3 > span"
 

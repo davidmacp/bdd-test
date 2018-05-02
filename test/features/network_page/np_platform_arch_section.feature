@@ -2,7 +2,7 @@ Feature: Network Page - Platform architecture
 
   As a user on the DADI.cloud Network page they should be able to view the Platform Architecture section
 
-Background:
+Scenario: Scroll to 'Platform Architecture Section'
   Given I open the url "/network"
   When I scroll to element "#architecture > h3 > span"
 

@@ -2,7 +2,7 @@ Feature: Token Page - Token Stats check
 
   As a user on the DADI.cloud Token page they should be able to view a snapshot of all the current token statistics
 
-Background:
+Scenario: Scroll to 'Token Stats Section'
   Given I open the url "/en/token"
   When I scroll to element "body > header > div.cnt > div.grid"
 

@@ -2,7 +2,7 @@ Feature: Knowledge Page - Title and Knowledge Categories section
 
   As a user on the DADI.cloud Knowledge page they are able to view and interact with the Knowledge Categories section
 
-Background:
+Scenario: Scroll to 'Knowledge Categories Section'
   Given I open the url "/knowledge"
   When I scroll to element "body > header > div > h1"
 

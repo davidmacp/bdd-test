@@ -4,7 +4,7 @@ exports.config = {
 
   specs: [
     './test/features/**/*.feature'
-    // './test/features/**/team_social_media_links.feature'
+    // './test/features/**/hp_social_media_links.feature'
   ],
   // Define specific suites
   suites: {
@@ -38,6 +38,17 @@ exports.config = {
     ],
     roadmap_page: [
       // ...
+      './test/features/roadmap_page/rp_submenu_links.feature',
+      './test/features/roadmap_page/rp_upcoming_milestones_section.feature',
+      './test/features/roadmap_page/rp_updates_section.feature',
+      './test/features/roadmap_page/rp_webservices_page.feature',
+      './test/features/roadmap_page/rp_announcements_page.feature',
+      './test/features/roadmap_page/rp_cloud_page.feature',
+      './test/features/roadmap_page/rp_description_section.feature',
+      './test/features/roadmap_page/rp_website_page.feature',
+      './test/features/roadmap_page/rp_header_links.feature',
+      './test/features/roadmap_page/rp_network_page.feature',
+      './test/features/roadmap_page/rp_social_media_links.feature'
     ],
     team_page: [
       './test/features/team_page/team_advisors_section.feature',

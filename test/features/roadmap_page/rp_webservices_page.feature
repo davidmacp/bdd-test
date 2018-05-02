@@ -2,7 +2,7 @@ Feature: Roadmap - Web Services Page
 
   As a user on the DADI.cloud Roadmap Web Services page they are able to view and interact with the Web Services section
 
-Background:
+Scenario: Open Roadmap - Web Services Page
   Given I open the url "/roadmap/web-services"
 
 Scenario: The Web Services section is labelled correctly

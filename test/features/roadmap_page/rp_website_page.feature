@@ -2,7 +2,7 @@ Feature: Roadmap - Website Page
 
   As a user on the DADI.cloud Roadmap Website page they are able to view and interact with the Website section
 
-Background:
+Scenario: Open Roadmap - Website Page
   Given I open the url "/roadmap/website"
 
 Scenario: The Website section is labelled correctly

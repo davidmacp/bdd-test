@@ -2,7 +2,7 @@ Feature: Roadmap - Network Page
 
   As a user on the DADI.cloud Roadmap Network page they are able to view and interact with the Network section
 
-Background:
+Scenario: Open Roadmap - Network Page
   Given I open the url "/roadmap/network"
 
 Scenario: The Network section is labelled correctly

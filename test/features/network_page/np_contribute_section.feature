@@ -2,7 +2,7 @@ Feature: Network Page - Be part of the network section
 
   As a user on the DADI.cloud Network page they should be able to view the Be part of the network section
 
-Background:
+Scenario: Scroll to 'Be part of the network section'
   Given I open the url "/network"
   When I scroll to element "#contribute > h3 > span"
 

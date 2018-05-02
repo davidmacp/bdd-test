@@ -2,7 +2,7 @@ Feature: Network Page - Testnet status
 
   As a user on the DADI.cloud Network page they should be able to view the testnet status section
 
-Background:
+Scenario: Open Network Page
   Given I open the url "/network"
 
 Scenario: Check testnet status title is visible

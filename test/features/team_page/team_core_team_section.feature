@@ -2,7 +2,7 @@ Feature: Team Page - Core Team check
 
   As a user on the DADI.cloud Team page they should be able to view profiles of all the Core Team
 
-Background:
+Scenario: Scroll to 'Core Team Section'
   Given I open the url "/en/team"
   When I scroll to element "body > main > div > div:nth-child(1) > h3 > span"
 

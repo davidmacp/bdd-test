@@ -2,7 +2,7 @@ Feature: Roadmap Page - Upcoming Milestones section
 
   As a user on the DADI.cloud Roadmap page they are able to view and interact with the Upcoming Milestones section
 
-Background:
+Scenario: Scroll to 'Upcoming Milestones Section'
   Given I open the url "/en/roadmap"
   When I scroll to element "body > header > div > div.hdr > h3"
 

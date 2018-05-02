@@ -2,7 +2,7 @@ Feature: Team Page - Advisors check
 
   As a user on the DADI.cloud Team page they should be able to view profiles of all the Advisors
 
-Background:
+Scenario: Scroll to 'Advisors Section'
   Given I open the url "/en/team"
   When I scroll to element "body > main > div > div:nth-child(3) > h3 > span"
 

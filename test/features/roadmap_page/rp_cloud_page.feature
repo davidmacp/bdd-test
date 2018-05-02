@@ -2,7 +2,7 @@ Feature: Roadmap - Cloud Page
 
   As a user on the DADI.cloud Roadmap Cloud page they are able to view and interact with the Cloud section
 
-Background:
+Scenario: Open Roadmap - Cloud Page
   Given I open the url "/roadmap/cloud"
 
 Scenario: The Cloud section is labelled correctly

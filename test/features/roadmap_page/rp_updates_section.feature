@@ -2,7 +2,7 @@ Feature: Roadmap Page - Updates section
 
   As a user on the DADI.cloud Roadmap page they are able to view and interact with the Updates section
 
-Background:
+Scenario: Scroll to 'Updates Section'
   Given I open the url "/en/roadmap"
   When I scroll to element "body > main > div > div.hdr > h3 > span"
 

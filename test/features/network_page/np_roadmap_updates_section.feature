@@ -2,7 +2,7 @@ Feature: Network Page - Roadmap Updates section
 
   As a user on the DADI.cloud Network page they are able to view and interact with the Roadmap Updates section
 
-Background:
+Scenario: Scroll to 'Roadmap Updates Section'
   Given I open the url "/network"
   When I scroll to element "body > header > div.cnt > div.hdr > h3 > span"
 

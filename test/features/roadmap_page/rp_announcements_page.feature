@@ -2,7 +2,7 @@ Feature: Roadmap - Announcements Page
 
   As a user on the DADI.cloud Roadmap Announcements page they are able to view and interact with the Announcements section
 
-Background:
+Scenario: Open Roadmap - Announcements Page
   Given I open the url "/roadmap/announcements"
 
 Scenario: The Announcements section is labelled correctly

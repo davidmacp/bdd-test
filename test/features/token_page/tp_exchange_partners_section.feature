@@ -2,7 +2,7 @@ Feature: Token Page - Exchange Partners check
 
   As a user on the DADI.cloud Token page they should be able to view a snapshot of all the current Exchange Partners
 
-Background:
+Scenario: Scroll to 'Exchange Partners Section'
   Given I open the url "/en/token"
   When I scroll to element "body > main > div > div:nth-child(1) > h3 > span"
 

@@ -2,7 +2,7 @@ Feature: Network Page - Description check
 
   As a user on the DADI.cloud Network page they should be able to view the page title and description
 
-Background:
+Scenario: Open Network Page
   Given I open the url "/network"
 
 Scenario: Check page header and description are visible

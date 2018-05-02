@@ -3,7 +3,7 @@ Feature: Network Page - Sub menu links check
   As a user on the DADI.cloud Network page they should be able to view and interact with the sub menu links in
   the header
 
-Background:
+Scenario: Open the Network Page
   Given I open the url "/network"
 
 Scenario: Check architecture sub menu link works
