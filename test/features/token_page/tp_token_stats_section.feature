@@ -30,13 +30,10 @@ Scenario: Check Circulating supply box displays correctly
   And I expect that element "body > header > div.cnt.pb > div.grid > div:nth-child(4) > div > div:nth-child(3)" contains the text "Total supply"
   And I expect that element "body > header > div.cnt.pb > div.grid > div:nth-child(4) > div > div:nth-child(3)" contains the text "100,000,000"
 
-# Scenario: Check Market cap graph is visible
-#   Then I expect that element "body > header > div.cnt > div.token-charts" is visible
-#   And I expect that element "body > header > div.cnt > div.token-charts > div > span" matches the text "Market cap"
-
 Scenario: Check Token volume graph is visible
-  Then I expect that element "body > header > div.cnt > div.token-volume" is visible
-  And I expect that element "body > header > div.cnt > div.token-volume > span" matches the text "Token volume"
+  Then I expect that element "#token" is visible
+  And I expect that element "body > header > div.cnt > span:nth-child(3)" matches the text "Price in ETH"
+  And I expect that element "body > header > div.cnt > span:nth-child(2)" matches the text "Price in BTC"
 
 Scenario: Check Stats disclaimer is visible
   Then I expect that element "body > header > div.cnt > div.fm" is visible

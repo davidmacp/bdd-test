@@ -13,13 +13,10 @@ Scenario: There are 4 Partners boxes visible
   Then there should be 4 Partner boxes visible
 
 Scenario: There should be a link to Okex
-  Then I expect that the attribute "href" from element "body > main > div > div.grid > div:nth-child(1) > a " is "https://okex.com/"
+  Then I expect that the attribute "href" from element "body > main > div > div:nth-child(2) > div:nth-child(1) > a " is "https://okex.com/"
 
 Scenario: There should be a link to KuCoin
-  Then I expect that the attribute "href" from element "body > main > div > div.grid > div:nth-child(2) > a " is "https://kucoin.com/"
+  Then I expect that the attribute "href" from element "body > main > div > div:nth-child(2) > div:nth-child(2) > a " is "https://kucoin.com/"
 
 Scenario: There should be a link to HitBTC
-  Then I expect that the attribute "href" from element "body > main > div > div.grid > div:nth-child(3) > a " is "https://hitbtc.com/"
-
-Scenario: There should be a link to Bancor
-  Then I expect that the attribute "href" from element "body > main > div > div.grid > div:nth-child(4) > a " is "https://www.bancor.network/"
+  Then I expect that the attribute "href" from element "body > main > div > div:nth-child(2) > div:nth-child(3) > a " is "https://hitbtc.com/"
