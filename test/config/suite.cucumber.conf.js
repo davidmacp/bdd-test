@@ -3,8 +3,8 @@ const defaultTimeoutInterval = process.env.DEBUG ? (60 * 60 * 500) : 30000
 exports.config = {
 
   specs: [
-    // './test/features/**/*.feature'
-    './test/features/homepage/hp_introduction_section.feature'
+    './test/features/**/*.feature'
+    // './test/features/homepage/hp_introduction_section.feature'
   ],
   // Define specific suites
   suites: {
