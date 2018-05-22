@@ -6,8 +6,8 @@ Scenario: The Introduction section is visible
   Given I open the url "/"
 
 Scenario: DADI logo visible
-  Then I expect that element "body > header > div.intro__about.animation.fade-in > h1 > img" is visible
+  Then I expect that element "body > header" becomes visible
 
 Scenario: Introduction is visible
-  Then I expect that element "#a-new-era-of-cloud-computing-services-powered-by-blockchain-technology-" is visible
+  Then I expect that element "#a-new-era-of-cloud-computing-services-powered-by-blockchain-technology-" becomes visible
   And I expect that element "#a-new-era-of-cloud-computing-services-powered-by-blockchain-technology-" matches the text "A new era of cloud computing services, powered by blockchain technology."
