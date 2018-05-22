@@ -4,50 +4,47 @@ exports.config = {
 
   specs: [
     './test/features/**/*.feature'
-    // './test/features/**/hp_social_media_links.feature'
+    // './test/features/roadmap_page/rp_roadmap_boxes_section.feature'
   ],
   // Define specific suites
   suites: {
     homepage: [
+      './test/features/homepage/hp_introduction_section.feature',
       './test/features/homepage/hp_header_documentation_link.feature',
       './test/features/homepage/hp_header_links.feature',
       './test/features/homepage/hp_header_webservices_links.feature',
-      './test/features/homepage/hp_knowledge_categories_section.feature',
-      './test/features/homepage/hp_latest_knowledge_section.feature',
-      './test/features/homepage/hp_roadmap_section.feature',
+      './test/features/homepage/hp_latest_section.feature',
+      './test/features/homepage/hp_about_section.feature',
+      './test/features/homepage/hp_join_section.feature',
       './test/features/homepage/hp_social_media_links.feature',
-      './test/features/homepage/hp_testnet_section.feature',
-      './test/features/homepage/hp_webservices_section.feature'
+      './test/features/homepage/hp_network_section.feature',
+      './test/features/homepage/hp_webservices_section.feature',
+      './test/features/homepage/hp_twitter_section.feature'
     ],
-    knowledge_page: [
-      './test/features/knowledge_page/kp_header_links.feature',
-      './test/features/knowledge_page/kp_social_media_links.feature',
-      './test/features/knowledge_page/kp_knowledge_categories_section.feature',
-      './test/features/knowledge_page/kp_latest_articles_section.feature'
+    community_page: [
+      './test/features/community_page/cp_header_links.feature',
+      './test/features/community_page/cp_social_media_links.feature',
+      './test/features/community_page/cp_community_title_section.feature',
+      './test/features/community_page/cp_tutorials_section.feature',
+      './test/features/community_page/cp_updates_section.feature',
+      './test/features/community_page/cp_knowledge_section.feature'
     ],
     network_page: [
       './test/features/network_page/np_contribute_section.feature',
       './test/features/network_page/np_description_section.feature',
       './test/features/network_page/np_header_links.feature',
       './test/features/network_page/np_header_sub_menu.feature',
-      './test/features/network_page/np_platform_arch_section.feature',
-      './test/features/network_page/np_roadmap_updates_section.feature',
+      './test/features/network_page/np_howitworks_section.feature',
+      './test/features/network_page/np_network_updates_section.feature',
       './test/features/network_page/np_social_media_links.feature',
       './test/features/network_page/np_testnet_status.feature',
-      './test/features/network_page/np_use_case_section.feature'
+      './test/features/network_page/np_use_case_section.feature',
+      './test/features/network_page/np_join_section.feature'
     ],
     roadmap_page: [
-      // ...
-      './test/features/roadmap_page/rp_submenu_links.feature',
-      './test/features/roadmap_page/rp_upcoming_milestones_section.feature',
-      './test/features/roadmap_page/rp_updates_section.feature',
-      './test/features/roadmap_page/rp_webservices_page.feature',
-      './test/features/roadmap_page/rp_announcements_page.feature',
-      './test/features/roadmap_page/rp_cloud_page.feature',
       './test/features/roadmap_page/rp_description_section.feature',
-      './test/features/roadmap_page/rp_website_page.feature',
       './test/features/roadmap_page/rp_header_links.feature',
-      './test/features/roadmap_page/rp_network_page.feature',
+      './test/features/roadmap_page/rp_roadmap_boxes_section.feature',
       './test/features/roadmap_page/rp_social_media_links.feature'
     ],
     team_page: [
@@ -86,7 +83,7 @@ exports.config = {
   // and 30 processes will get spawned. The property handles how many capabilities
   // from the same test should run tests.
   //
-  maxInstances: 2,
+  maxInstances: 3,
 
   capabilities: [
 
@@ -94,7 +91,7 @@ exports.config = {
       browserName: 'chrome',
       // platform: 'Windows 10',
       // version: '50.0',
-      maxInstances: '2',
+      maxInstances: '3',
       chromeOptions: {
         args: ['--headless', '--disable-gpu', 'window-size=1366,768']
       }
@@ -184,7 +181,8 @@ exports.config = {
   // Set a base URL in order to shorten url command calls. If your url parameter starts
   // with "/", then the base url gets prepended.
   // baseUrl: 'http://localhost:3000',
-  baseUrl: 'http://beta2.dadi.cloud/en',
+  baseUrl: 'http://35.178.60.215/en',
+  // baseUrl: 'http://45.77.109.180/en',
   waitforTimeout: 30000, // Default timeout for all waitFor* commands.
   connectionRetryTimeout: 30000, // Default timeout in milliseconds for request  if Selenium Grid doesn't send response
   connectionRetryCount: 3, // Default request retries count

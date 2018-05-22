@@ -5,6 +5,6 @@ Feature: Team Page - Social media links check
 
 Scenario: Check social media links are present
   # Given I have a screen that is 1310 by 768 pixels
-  Given I open the url "/en/team"
+  Given I open the url "/team"
   Then I expect that element "body > nav > div.cnt > ul > li.nav__social > a" does exist
   And there should be 6 Social Media icons visible

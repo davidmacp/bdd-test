@@ -5,21 +5,21 @@ const defineSupportCode = require('cucumber').defineSupportCode
 
 // module.exports = {
 defineSupportCode(function ({ When }) {
-  When(/^the user scrolls to the Roadmap Updates section$/, () => {
+  When(/^the user scrolls to the Latest from DADI section$/, () => {
     scroll('#stickContainer > div:nth-child(1) > div.hdr > h3 > span')
   })
 })
 
 defineSupportCode(function ({ Then }) {
-  Then(/^there should be 6 Roadmap update articles visible$/, () => {
+  Then(/^there should be 6 Latest articles visible$/, () => {
     checkElementCount('#stickContainer > div:nth-child(1) > div.cols > article:nth-child(n)', 6)
   })
 
-  Then(/^there should be 6 primary Roadmap badges$/, () => {
-    checkElementCount('#stickContainer div.badge__primary', 6)
+  Then(/^there should be 6 primary badges$/, () => {
+    checkElementCount('#stickContainer > div:nth-child(1) > div.cols.cols--2 > article:nth-child(n) > div.box__inner > div > div.badge__primary', 6)
   })
 
-  Then(/^there should be 6 clickable primary Roadmap badges to the Roadmap page$/, () => {
+  Then(/^there should be 6 clickable primary badges$/, () => {
     checkElementCount('#stickContainer div.badge__primary > a[href="/en/roadmap"]', 6)
   })
 

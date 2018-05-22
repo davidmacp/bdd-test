@@ -9,20 +9,20 @@ Scenario: Scroll to 'What can it be used for? Section'
 Scenario: Check What can it be used for? title is visible
   Then I expect that header "#usecases > h3 > span" matches the text "WHAT CAN IT BE USED FOR?"
 
-Scenario: 11 Use case boxes showing
-  Then there should be 11 Use case boxes visible
+Scenario: 12 Use case boxes showing
+  Then there should be 12 Use case boxes visible
 
 Scenario: Each box has an image icon displayed
-  Then there should be 11 image icons visible
+  Then there should be 12 image icons visible
 
 Scenario: Each box has a header title visible
-  Then there should be 11 header titles visible
+  Then there should be 12 header titles visible
 
 Scenario: Each box has a description text
-  Then there should be 11 box descriptions visible
+  Then there should be 12 box descriptions visible
 
-Scenario: Each of the boxes has a 'Learn more' link
-  Then there should be 11 "Learn more" links visible
-
-Scenario: Use case section has a 'Read all use cases →' link
-  Then there should be a "Read all use cases →" link available
+# Scenario: Each of the boxes has a 'Learn more' link
+#   Then there should be 11 "Learn more" links visible
+#
+# Scenario: Use case section has a 'Read all use cases →' link
+#   Then there should be a "Read all use cases →" link available

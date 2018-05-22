@@ -1,10 +1,10 @@
-Feature: Network Page - Header links check
+Feature: Community Page - Header links check
 
-  As a user on the DADI.cloud Network page they should be able to view the links for other screens in the header
+  As a user on the DADI.cloud Community page they should be able to view the links for other screens in the header
 
 Scenario Outline: Check header links are present
-  Given I open the url "/network"
-  Then I expect that element "body > nav > div.cnt > ul > li:nth-child(1) > a" has the class "active"
+  Given I open the url "/community"
+  Then I expect that element "body > nav > div.cnt > ul > li:nth-child(3) > a" has the class "active"
   Then I expect that element "<element>" does exist
   And I expect that element "<element>" contains the text "<text>"
 

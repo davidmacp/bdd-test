@@ -11,7 +11,7 @@ Scenario Outline: Check social media icon links open the correct page in a new w
 
   Examples:
   | link     | url         |
-  | Github   | https://github.com/dadi |
+  | GitHub   | https://github.com/dadi |
   | Medium   | https://medium.com/dadi |
   | Twitter  | https://twitter.com/dadi |
   | Reddit   | https://www.reddit.com/r/DADI/ |

@@ -4,8 +4,8 @@ const defineSupportCode = require('cucumber').defineSupportCode
 
 // module.exports = {
 defineSupportCode(function ({ Then }) {
-  Then(/^there should be 4 Latest Knowledge articles visible$/, () => {
-    checkElementCount('#homeMain > div.cnt > div.cols article', 4)
+  Then(/^there should be 3 About boxes visible$/, () => {
+    checkElementCount('#homeMain > div.bds > div > div > div:nth-child(n)', 3)
   })
 
   Then(/^there should be 4 primary badges$/, () => {

@@ -11,11 +11,7 @@ Scenario Outline: Check header links go to the correct page
   Then I expect that the title is "<title>"
 
   Examples:
-  | pagename  | url          | title                            |
+  | pagename  | url          | title                             |
   | Overview  | en           | Decentralized web services \| DADI |
-  | Roadmap   | en/roadmap   | Roadmap \| DADI |
   | Network   | en/network   | Network \| DADI |
-  | Knowledge | en/knowledge | Knowledge \| DADI |
-  | Token     | en/token     | Token \| DADI |
-  # | Partners  | en/partners  | Partners \| DADI |
-  | Team      | en/team      | The Team \| DADI |
+  | Community | en/community | Community \| DADI |

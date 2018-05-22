@@ -7,8 +7,8 @@ Scenario: Open the Network Page
   Given I open the url "/network"
 
 Scenario: Check architecture sub menu link works
-  When I click on the link "Architecture"
-  Then I expect that element "#architecture > h3 > span" is within the viewport
+  When I click on the link "How it works"
+  Then I expect that element "#how > h3 > span" is within the viewport
 
 Scenario: Check use cases sub menu link works
   When I click on the link "Use cases"

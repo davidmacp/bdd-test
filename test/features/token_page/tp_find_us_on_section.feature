@@ -3,7 +3,7 @@ Feature: Token Page - Find Us On check
   As a user on the DADI.cloud Token page they should be able to view the Find Us On section
 
 Scenario: Scroll to 'Find Us On Section'
-  Given I open the url "/en/token"
+  Given I open the url "/token"
   When I scroll to element "body > main > div > div:nth-child(3) > h3 > span"
 
 Scenario: Check Find Us On title is correct

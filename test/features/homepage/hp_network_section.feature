@@ -1,14 +1,17 @@
-Feature: Home Page - Testnet section
+Feature: Home Page - Network section
 
-  As a user on the DADI.cloud home page they are able to view and interact with The Testnet section
+  As a user on the DADI.cloud home page they are able to view and interact with The Network section
 
-Scenario: The Testnet section is labelled correctly
+Scenario: The Network section is labelled correctly
   Given I open the url "/"
   When I scroll to element "#stickContainer .col:nth-of-type(2) .hdr"
-  Then I expect that header "#stickContainer .col:nth-of-type(2) .hdr" matches the text "THE TESTNET"
+  Then I expect that header "#stickContainer .col:nth-of-type(2) .hdr" matches the text "THE NETWORK"
 
 Scenario: There is a world map displayed
   Then I expect that element "#map" is visible
+
+Scenario: There is a Testnet title on the map
+  Then I expect that element "#stick div.badge__primary" matches the text "TESTNET"
 
 Scenario: Has a box for average response time
   Then I expect that header "#stick .col:nth-of-type(1) .stat" contains the text "Av. response time"
@@ -22,5 +25,5 @@ Scenario: Has a box for hosts
   Then I expect that header "#stick .col:nth-of-type(3)" contains the text "Hosts"
   And I expect that element "#host_count" does appear exactly "1" times
 
-Scenario: Testnet section has a 'About the network →' link
-  Then I expect there is an "About the network →" link
+Scenario: Testnet section has a 'About the network' link
+  Then I expect there is an "About the network" link
