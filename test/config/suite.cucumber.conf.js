@@ -3,8 +3,8 @@ const defaultTimeoutInterval = process.env.DEBUG ? (60 * 60 * 500) : 30000
 exports.config = {
 
   specs: [
-    './test/features/**/*.feature'
-    // './test/features/roadmap_page/rp_roadmap_boxes_section.feature'
+    // './test/features/**/*.feature'
+    './test/features/homepage/hp_introduction_section.feature'
   ],
   // Define specific suites
   suites: {
@@ -192,11 +192,12 @@ exports.config = {
   // commands. Instead, they hook themselves up into the test process.
   //
   services: ['selenium-standalone'],
+  seleniumLogs: './logs',
   // services: ['selenium-standalone', 'phantomjs', 'appium'],
   //
   framework: 'cucumber',
   // reporters: ['spec', 'allure', 'json'],
-  reporters: ['spec', 'allure'],
+  reporters: ['spec', 'allure', 'junit'],
 
   reporterOptions: {
     // json: {outputDir: './test/reports/json-results/'},
@@ -204,6 +205,9 @@ exports.config = {
       outputDir: './test/reports/allure-results/',
       disableWebdriverStepsReporting: false,
       useCucumberStepReporter: true
+    },
+    junit: {
+      outputDir: './test/reports/junit/'
     }
   },
 
