@@ -9,14 +9,14 @@ Scenario: Scroll to 'Core Team Section'
 Scenario: Check Core Team title is correct
   Then I expect that element "body > main > div > div:nth-child(1) > h3 > span" matches the text "CORE TEAM"
 
-Scenario: There are 18 Core Team member boxes visible
-  Then there should be 18 Core Team member boxes visible
+Scenario: There are 20 Core Team member boxes visible
+  Then there should be 20 Core Team member boxes visible
 
-Scenario: There are 18 Core Team member images visible
-  Then there should be 18 Core Team member images visible
+Scenario: There are 20 Core Team member images visible
+  Then there should be 20 Core Team member images visible
 
-Scenario: There are 18 Core Team member names visible
-  Then there should be 18 Core Team member names visible
+Scenario: There are 20 Core Team member names visible
+  Then there should be 20 Core Team member names visible
 
-Scenario: There are 18 Core Team member titles visible
-  Then there should be 18 Core Team member titles visible
+Scenario: There are 20 Core Team member titles visible
+  Then there should be 20 Core Team member titles visible
