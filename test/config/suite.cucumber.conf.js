@@ -185,7 +185,7 @@ exports.config = {
   // baseUrl: 'http://45.77.109.180/en',
   waitforTimeout: 30000, // Default timeout for all waitFor* commands.
   connectionRetryTimeout: 30000, // Default timeout in milliseconds for request  if Selenium Grid doesn't send response
-  connectionRetryCount: 3, // Default request retries count
+  connectionRetryCount: 1, // Default request retries count
 
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
