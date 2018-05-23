@@ -91,10 +91,10 @@ exports.config = {
       browserName: 'chrome',
       // platform: 'Windows 10',
       // version: '50.0',
-      maxInstances: '3',
-      chromeOptions: {
-        args: ['--headless', '--disable-gpu', 'window-size=1366,768']
-      }
+      maxInstances: '3'
+      // chromeOptions: {
+      //   args: ['--headless', '--disable-gpu', 'window-size=1366,768']
+      // }
     }
     //
     // {
