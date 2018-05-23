@@ -11,8 +11,8 @@ Scenario: Check page header and description are visible
 
 Scenario: Check Platform introduction is visible and works correctly
   When I click on the link "Platform introduction"
-  Then I expect that element "body > header > div > h1" contains the text "DADI network: introduction"
-  And I expect that the title is "DADI network: introduction | DADI"
+  Then I expect that element "body > header > div > h1" contains the text "DADI Network: introduction"
+  And I expect that the title is "DADI Network: introduction | DADI"
 
 Scenario: Check Technology roadmap is visible and works correctly
   When I click on the link "Technology roadmap"

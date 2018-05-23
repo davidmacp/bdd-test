@@ -5,7 +5,7 @@ Feature: Roadmap Page - Description check
 Scenario: Check page header and description are visible
   Given I open the url "/roadmap"
   Then I expect that element "body > header > div > h1" contains the text "Roadmap"
-  And I expect that element "body > header > div > p.normal" matches the text "This is a high level roadmap for the twelve months post-Crowdsale. Timings are dependent on the scale of success of the Crowdsale and reflect the DADI team’s ambition: the more funds raised, the faster and further the team will be able to travel."
+  And I expect that element "body > header > div > p.normal" matches the text "A high level roadmap for DADI technology, showing development milestones for both network and web services."
 
 Scenario: Check Show roadmap archive link is visible and works correctly
   When I click on the link "Show roadmap archive"

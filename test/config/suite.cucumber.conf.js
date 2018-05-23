@@ -181,7 +181,8 @@ exports.config = {
   // Set a base URL in order to shorten url command calls. If your url parameter starts
   // with "/", then the base url gets prepended.
   // baseUrl: 'http://localhost:3000',
-  baseUrl: 'http://35.178.60.215/en',
+  // baseUrl: 'http://35.178.60.215/en',
+  baseUrl: 'http://52.214.26.93//en',
   // baseUrl: 'http://45.77.109.180/en',
   waitforTimeout: 30000, // Default timeout for all waitFor* commands.
   connectionRetryTimeout: 30000, // Default timeout in milliseconds for request  if Selenium Grid doesn't send response
