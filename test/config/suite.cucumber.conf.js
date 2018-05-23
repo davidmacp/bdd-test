@@ -193,6 +193,22 @@ exports.config = {
   //
   services: ['selenium-standalone'],
   seleniumLogs: './logs',
+  seleniumArgs: {
+    drivers: {
+      chrome: {
+        version: 2.38,
+        baseURL: 'https://chromedriver.storage.googleapis.com'
+      }
+    }
+  },
+  seleniumInstallArgs: {
+    drivers: {
+      chrome: {
+        version: 2.38,
+        baseURL: 'https://chromedriver.storage.googleapis.com'
+      }
+    }
+  },
   // services: ['selenium-standalone', 'phantomjs', 'appium'],
   //
   framework: 'cucumber',
