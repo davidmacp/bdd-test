@@ -174,9 +174,9 @@ exports.config = {
   sync: true,
   logLevel: 'error', // Level of logging verbosity: silent | verbose | command | data | result | error
   coloredLogs: true, // Enables colors for log output.
-  screenshotPath: './test/reports/errorShots/', // Saves a screenshot to a given path if a command fails.
+  // screenshotPath: './test/reports/errorShots/', // Saves a screenshot to a given path if a command fails.
   // take screenshot on reject
-  screenshotOnReject: false,
+  // screenshotOnReject: false,
   //
   // Set a base URL in order to shorten url command calls. If your url parameter starts
   // with "/", then the base url gets prepended.
