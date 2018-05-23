@@ -31,7 +31,9 @@
     "allure-commandline": "^2.5.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
-    "chai": "4.1.2"
+    "chai": "4.1.2",
+    "cucumber": "^4.2.1",
+    "puppeteer": "^1.4.0"
   },
   "babel": {
     "presets": [

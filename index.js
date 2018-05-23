@@ -28,7 +28,7 @@
 // reporter.generate(options)
 
 module.exports = {
-  Given: require('./features/step_definitions/given'),
-  When: require('./features/step_definitions/when'),
-  Then: require('./features/step_definitions/then')
+  Given: require('./test/stepDefinitions/given'),
+  When: require('./test/stepDefinitions/when'),
+  Then: require('./test/stepDefinitions/then')
 }
