@@ -7,8 +7,8 @@ Scenario: The Introduction section is visible
   When I pause for 1000ms
 
 Scenario: DADI logo visible
-  Then I expect that element "body > header > div.intro__about.animation.fade-in > h1 > img" becomes visible
+  Then I expect that element "body > header" is visible
 
 Scenario: Introduction is visible
-  Then I expect that element "#a-new-era-of-cloud-computing-services-powered-by-blockchain-technology-" becomes visible
+  # Then I expect that element "#a-new-era-of-cloud-computing-services-powered-by-blockchain-technology-" becomes visible
   And I expect that element "#a-new-era-of-cloud-computing-services-powered-by-blockchain-technology-" matches the text "A new era of cloud computing services, powered by blockchain technology."
