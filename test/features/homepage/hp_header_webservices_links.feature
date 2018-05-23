@@ -7,8 +7,9 @@ Scenario: Check web services links appear
   Given I open the url "/"
   When the user clicks on the web services header link
   Then the sub menu is displayed
-  And there should be a link for "web"
-  And there should be a link for "publish"
-  And there should be a link for "api"
-  And there should be a link for "cdn"
-  And there should be a link for "queue"
+  And there should be links for "web,publish,api,cdn,queue"
+  # And there should be a link for "web"
+  # And there should be a link for "publish"
+  # And there should be a link for "api"
+  # And there should be a link for "cdn"
+  # And there should be a link for "queue"

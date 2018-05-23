@@ -18,16 +18,28 @@ defineSupportCode(function ({ Then }) {
     expect(classArray).to.not.include('hide')
   })
 
-  Then(/^there should be a link for "([^"]*)"$/, linkText => {
-    // get text value of all links within the submenu
+  // Then(/^there should be a link for "([^"]*)"$/, { wrapperOptions: { retry: 2 } }, linkText => {
+  //   // get text value of all links within the submenu
+  //
+  //   // [ 'Web', 'Publish', 'API', 'CDN', 'Queue' ]
+  //   let submenuItems = browser.getText('div.subnav ul li a').map(item => {
+  //     // lowercase all text values
+  //     console.log(`**${item}**${linkText}`)
+  //     return item.toLowerCase()
+  //   })
+  //   console.log(submenuItems, linkText)
+  //   // test that linkText exists in the submenu links
+  //   expect(submenuItems).to.include(linkText)
+  // })
 
-    // [ 'Web', 'Publish', 'API', 'CDN', 'Queue' ]
+  Then(/^there should be links for "([^"]*)"$/, linkText => {
     let submenuItems = browser.getText('div.subnav ul li a').map(item => {
       // lowercase all text values
+      // console.log(`**${item}**${linkText}`)
       return item.toLowerCase()
     })
-
+    // console.log(submenuItems, linkText)
     // test that linkText exists in the submenu links
-    expect(submenuItems).to.include(linkText)
+    expect(submenuItems).to.have.ordered.members(linkText.split(','))
   })
 })
