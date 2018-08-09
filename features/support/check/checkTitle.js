@@ -11,7 +11,7 @@ module.exports = function (falseCase, expectedTitle) {
     return
   }
 
-    /**
+  /**
      * The title of the current this.browser window
      * @type {String}
      */
@@ -19,15 +19,15 @@ module.exports = function (falseCase, expectedTitle) {
 
   if (falseCase) {
     expect(title).to.not
-            .equal(
-                expectedTitle,
-                `Expected title not to be "${expectedTitle}"`
-            )
+      .equal(
+        expectedTitle,
+        `Expected title not to be "${expectedTitle}"`
+      )
   } else {
     expect(title).to
-            .equal(
-                expectedTitle,
-                `Expected title to be "${expectedTitle}" but found "${title}"`
-            )
+      .equal(
+        expectedTitle,
+        `Expected title to be "${expectedTitle}" but found "${title}"`
+      )
   }
 }

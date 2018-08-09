@@ -11,7 +11,7 @@ module.exports = function (falseCase, expectedUrlPart) {
     return
   }
 
-    /**
+  /**
      * The URL of the current this.browser window
      * @type {String}
      */
@@ -19,16 +19,16 @@ module.exports = function (falseCase, expectedUrlPart) {
 
   if (falseCase) {
     expect(currentUrl).to.not
-            .contain(
-                expectedUrlPart,
-                `Expected URL "${currentUrl}" not to contain ` +
+      .contain(
+        expectedUrlPart,
+        `Expected URL "${currentUrl}" not to contain ` +
                 `"${expectedUrlPart}"`
-            )
+      )
   } else {
     expect(currentUrl).to
-            .contain(
-                expectedUrlPart,
-                `Expected URL "${currentUrl}" to contain "${expectedUrlPart}"`
-            )
+      .contain(
+        expectedUrlPart,
+        `Expected URL "${currentUrl}" to contain "${expectedUrlPart}"`
+      )
   }
 }

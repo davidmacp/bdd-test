@@ -9,6 +9,7 @@ const checkEqualsText = require('../support/check/checkEqualsText')
 const checkFocus = require('../support/check/checkFocus')
 const checkInURLPath = require('../support/check/checkInURLPath')
 const checkIsOpenedInNewWindow = require('../support/check/checkIsOpenedInNewWindow')
+const checkIsOpenedInNewWindowWithTitle = require('../support/check/checkIsOpenedInNewWindowWithTitle')
 const checkModal = require('../support/check/checkModal')
 const checkModalText = require('../support/check/checkModalText')
 const checkNewWindow = require('../support/check/checkNewWindow')
@@ -27,7 +28,7 @@ const waitFor = require('../support/action/waitFor')
 const waitForVisible = require('../support/action/waitForVisible')
 const checkIfElementExists = require('../support/lib/checkIfElementExists')
 
-module.exports = function() {
+module.exports = function () {
   this.Then(
     /^I expect that the title is( not)* "([^"]*)?"$/,
     checkTitle
@@ -151,6 +152,11 @@ module.exports = function() {
   this.Then(
     /^I expect the url "([^"]*)?" is opened in a new (tab|window)$/,
     checkIsOpenedInNewWindow
+  )
+
+  this.Then(
+    /^I expect the url "([^"]*)?" is opened in a new (tab|window) and has the title: "([^"]*)?"$/,
+    checkIsOpenedInNewWindowWithTitle
   )
 
   this.Then(

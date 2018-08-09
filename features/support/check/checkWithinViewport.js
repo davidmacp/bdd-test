@@ -11,7 +11,7 @@ module.exports = function (element, falseCase) {
     return
   }
 
-    /**
+  /**
      * The state of visibility of the given element inside the viewport
      * @type {Boolean}
      */
@@ -19,15 +19,15 @@ module.exports = function (element, falseCase) {
 
   if (falseCase) {
     expect(isVisible).to.not
-            .equal(
-                true,
-                `Expected element "${element}" to be outside the viewport`
-            )
+      .equal(
+        true,
+        `Expected element "${element}" to be outside the viewport`
+      )
   } else {
     expect(isVisible).to
-            .equal(
-                true,
-                `Expected element "${element}" to be inside the viewport`
-            )
+      .equal(
+        true,
+        `Expected element "${element}" to be inside the viewport`
+      )
   }
 }

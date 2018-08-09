@@ -46,3 +46,4 @@ Scenario: Check web services links appear
 * [Chimp](https://chimp.readme.io/docs)
 * [Webdriver.io API documentation](http://webdriver.io/api.html)
 * [Chai Assertion Library documentation](http://chaijs.com/api/bdd/)
+* [Puppeteer](https://github.com/GoogleChrome/puppeteer)

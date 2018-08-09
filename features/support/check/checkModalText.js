@@ -14,7 +14,7 @@ module.exports = function (modalType, falseState, expectedText) {
   }
 
   try {
-        /**
+    /**
          * The text of the current modal
          * @type {String}
          */
@@ -22,16 +22,16 @@ module.exports = function (modalType, falseState, expectedText) {
 
     if (falseState) {
       expect(text).to.not.equal(
-                expectedText,
-                `Expected the text of ${modalType} not to equal ` +
+        expectedText,
+        `Expected the text of ${modalType} not to equal ` +
                 `"${expectedText}"`
-            )
+      )
     } else {
       expect(text).to.equal(
-                expectedText,
-                `Expected the text of ${modalType} not to equal ` +
+        expectedText,
+        `Expected the text of ${modalType} not to equal ` +
                 `"${expectedText}", instead found "${text}"`
-            )
+      )
     }
   } catch (e) {
     assert.equal(e, `A ${modalType} was not opened when it should have been opened`)

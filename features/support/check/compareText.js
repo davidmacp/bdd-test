@@ -12,13 +12,13 @@ module.exports = function (element1, falseCase, element2) {
     return
   }
 
-    /**
+  /**
      * The text of the first element
      * @type {String}
      */
   const text1 = this.browser.getText(element1)
 
-    /**
+  /**
      * The text of the second element
      * @type {String}
      */
@@ -26,13 +26,13 @@ module.exports = function (element1, falseCase, element2) {
 
   if (falseCase) {
     expect(text1).to.not.equal(
-            text2,
-            `Expected text not to be "${text1}"`
-        )
+      text2,
+      `Expected text not to be "${text1}"`
+    )
   } else {
     expect(text1).to.equal(
-            text2,
-            `Expected text to be "${text1}" but found "${text2}"`
-        )
+      text2,
+      `Expected text to be "${text1}" but found "${text2}"`
+    )
   }
 }

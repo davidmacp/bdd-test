@@ -8,7 +8,7 @@ module.exports = function (obsolete) {
     return
   }
 
-/* eslint-enable no-unused-vars */
+  /* eslint-enable no-unused-vars */
   /**
    * The last opened window handle
    * @type {Object}

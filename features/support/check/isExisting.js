@@ -10,7 +10,7 @@ module.exports = function (selector, falseCase) {
     return
   }
 
-    /**
+  /**
      * Elements found in the DOM
      * @type {Object}
      */
@@ -18,9 +18,9 @@ module.exports = function (selector, falseCase) {
 
   if (falseCase) {
     expect(elements).to.have
-            .lengthOf(0, `Expected element "${selector}" not to exist`)
+      .lengthOf(0, `Expected element "${selector}" not to exist`)
   } else {
     expect(elements).to.have.length
-            .above(0, `Expected element "${selector}" to exist`)
+      .above(0, `Expected element "${selector}" to exist`)
   }
 }

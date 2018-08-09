@@ -13,13 +13,13 @@ module.exports = function (elem, falseCase, expectedPosition, axis) {
     return
   }
 
-    /**
+  /**
      * Get the location of the element on the given axis
      * @type {[type]}
      */
   const location = this.browser.getLocation(elem, axis)
 
-    /**
+  /**
      * Parsed expected position
      * @type {Int}
      */
@@ -27,18 +27,18 @@ module.exports = function (elem, falseCase, expectedPosition, axis) {
 
   if (falseCase) {
     expect(location).to.not
-            .equal(
-                intExpectedPosition,
-                `Element "${elem}" should not be positioned at ` +
+      .equal(
+        intExpectedPosition,
+        `Element "${elem}" should not be positioned at ` +
                 `${intExpectedPosition}px on the ${axis} axis`
-            )
+      )
   } else {
     expect(location).to
-            .equal(
-                intExpectedPosition,
-                `Element "${elem}" should be positioned at ` +
+      .equal(
+        intExpectedPosition,
+        `Element "${elem}" should be positioned at ` +
                 `${intExpectedPosition}px on the ${axis} axis, but was found ` +
                 `at ${location}px`
-            )
+      )
   }
 }

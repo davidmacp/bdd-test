@@ -11,7 +11,7 @@ module.exports = function (selector, falseCase) {
     return
   }
 
-    /**
+  /**
      * Value of the hasFocus function for the given element
      * @type {Boolean}
      */
@@ -19,9 +19,9 @@ module.exports = function (selector, falseCase) {
 
   if (falseCase) {
     expect(hasFocus).to.not
-            .equal(true, 'Expected element to not be focused, but it is')
+      .equal(true, 'Expected element to not be focused, but it is')
   } else {
     expect(hasFocus).to
-            .equal(true, 'Expected element to be focused, but it is not')
+      .equal(true, 'Expected element to be focused, but it is not')
   }
 }

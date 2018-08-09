@@ -11,7 +11,7 @@ module.exports = function (element, falseCase) {
     return
   }
 
-    /**
+  /**
      * The enabled state of the given element
      * @type {Boolean}
      */
@@ -19,9 +19,9 @@ module.exports = function (element, falseCase) {
 
   if (falseCase) {
     expect(isEnabled).to.not
-            .equal(true, `Expected element "${element}" not to be enabled`)
+      .equal(true, `Expected element "${element}" not to be enabled`)
   } else {
     expect(isEnabled).to
-            .equal(true, `Expected element "${element}" to be enabled`)
+      .equal(true, `Expected element "${element}" to be enabled`)
   }
 }

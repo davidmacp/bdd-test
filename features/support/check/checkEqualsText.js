@@ -20,10 +20,10 @@ module.exports = function (elementType, element, falseCase, expectedText) {
   }
 
   if (
-        elementType === 'button' ||
+    elementType === 'button' ||
         elementType === 'header' ||
         this.browser.getAttribute(element, 'value') === null
-    ) {
+  ) {
     command = 'getText'
   }
 

@@ -13,25 +13,25 @@ module.exports = function (elem, falseCase, expectedSize, dimension) {
     return
   }
 
-    /**
+  /**
      * The size of the given element
      * @type {Object}
      */
   const elementSize = this.browser.getElementSize(elem)
 
-    /**
+  /**
      * Parsed size to check for
      * @type {Int}
      */
   const intExpectedSize = parseInt(expectedSize, 10)
 
-    /**
+  /**
      * The size property to check against
      * @type {Int}
      */
   let origionalSize = elementSize.height
 
-    /**
+  /**
      * The label of the checked property
      * @type {String}
      */
@@ -44,17 +44,17 @@ module.exports = function (elem, falseCase, expectedSize, dimension) {
 
   if (falseCase) {
     expect(origionalSize).to.not
-            .equal(
-                intExpectedSize,
-                `Element "${elem}" should not have a ${label} of ` +
+      .equal(
+        intExpectedSize,
+        `Element "${elem}" should not have a ${label} of ` +
                 `${intExpectedSize}px`
-            )
+      )
   } else {
     expect(origionalSize).to
-            .equal(
-                intExpectedSize,
-                `Element "${elem}" should have a ${label} of ` +
+      .equal(
+        intExpectedSize,
+        `Element "${elem}" should have a ${label} of ` +
                 `${intExpectedSize}px, but is ${origionalSize}px`
-            )
+      )
   }
 }
